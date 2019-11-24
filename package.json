@@ -17,7 +17,8 @@
     "prettier": "prettier --write contracts/**/*.sol",
     "lint": "solhint --max-warnings 0 \"contracts/**/*.sol\"",
     "compile": "truffle compile",
-    "test": "truffle test"
+    "test": "truffle test",
+    "migrate": "truffle migrate"
   },
   "repository": {
     "type": "git",

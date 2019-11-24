@@ -1,9 +1,11 @@
-// From https://www.trufflesuite.com/docs/truffle/testing/testing-your-contracts
+// From https://github.com/truffle-box/metacoin-box
 
 pragma solidity ^0.5.0;
 
+import "./ConvertLib.sol";
+
 contract MetaCoin {
-    mapping(address => uint256) balances;
+    mapping(address => uint256) private balances;
 
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
 
@@ -28,15 +30,5 @@ contract MetaCoin {
 
     function getBalance(address addr) public view returns (uint256) {
         return balances[addr];
-    }
-}
-
-library ConvertLib {
-    function convert(uint256 amount, uint256 conversionRate)
-        public
-        pure
-        returns (uint256 convertedAmount)
-    {
-        return amount * conversionRate;
     }
 }
