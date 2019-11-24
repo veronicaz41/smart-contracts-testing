@@ -17,10 +17,11 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b5033600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610144806100616000396000f3fe608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633ccfd60b14610046575b600080fd5b34801561005257600080fd5b5061005b61005d565b005b3373ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff161415156100b857600080fd5b3373ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050158015610115573d6000803e3d6000fd5b5056fea165627a7a72305820c9b4c68b29cc020ebf8f1f4eb626a5d0cf0c04f9d7df1356e1572b92daf3d01a0029",
-  "deployedBytecode": "0x608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633ccfd60b14610046575b600080fd5b34801561005257600080fd5b5061005b61005d565b005b3373ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff161415156100b857600080fd5b3373ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f19350505050158015610115573d6000803e3d6000fd5b5056fea165627a7a72305820c9b4c68b29cc020ebf8f1f4eb626a5d0cf0c04f9d7df1356e1572b92daf3d01a0029",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":false,\"inputs\":[],\"name\":\"withdraw\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/slither-examples/Shadow.sol\":\"DerivedContract\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/slither-examples/Shadow.sol\":{\"keccak256\":\"0x9f684b849fb83db3f7704126660483d585d6955984c2fb64ef9da97ca4ec4e18\",\"urls\":[\"bzz-raw://c6232da11ceae076ee120f62e154c48e9c51c2a0d9536aad9e7aa3a6cb2b8af5\",\"dweb:/ipfs/QmRY6yJ1c8VE7G3yU7pSF8BvMohC2STCdvJxAdTXjRP33s\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5033600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610121806100616000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80633ccfd60b14602d575b600080fd5b60336035565b005b3373ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614608d57600080fd5b3373ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f1935050505015801560e9573d6000803e3d6000fd5b5056fea265627a7a72315820d5ee419c0a67d02402efc77d866d3d8df0d4e46c685bfbe57be29c1e751fc7ec64736f6c634300050c0032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80633ccfd60b14602d575b600080fd5b60336035565b005b3373ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1614608d57600080fd5b3373ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f1935050505015801560e9573d6000803e3d6000fd5b5056fea265627a7a72315820d5ee419c0a67d02402efc77d866d3d8df0d4e46c685bfbe57be29c1e751fc7ec64736f6c634300050c0032",
   "sourceMap": "320:291:3:-;;;449:56;8:9:-1;5:2;;;30:1;27;20:12;5:2;449:56:3;488:10;480:5;;:18;;;;;;;;;;;;;;;;;;320:291;;;;;;",
-  "deployedSourceMap": "320:291:3:-;;;;;;;;;;;;;;;;;;;;;;;;511:98;;8:9:-1;5:2;;;30:1;27;20:12;5:2;511:98:3;;;;;;;286:10;277:19;;:5;;;;;;;;;;;:19;;;269:28;;;;;;;;560:10;:19;;:42;588:4;580:21;;;560:42;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;560:42:3;511:98::o",
+  "deployedSourceMap": "320:291:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;320:291:3;;;;;;;;;;;;;;;;;;;511:98;;;:::i;:::-;;;286:10;277:19;;:5;;;;;;;;;;;:19;;;269:28;;;;;;560:10;:19;;:42;588:4;580:21;;;560:42;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;560:42:3;511:98::o",
   "source": "// From https://github.com/crytic/slither/wiki/Detector-Documentation\n// State variable shadowing\n\npragma solidity ^0.5.0;\n\ncontract BaseContract {\n    address owner;\n\n    // the owner is never assigned, and this modifier does not work\n    modifier isOwner() {\n        require(owner == msg.sender);\n        _;\n    }\n\n}\n\ncontract DerivedContract is BaseContract {\n    // shadowing the owner in BaseContract, should be removed\n    address owner;\n\n    constructor() public {\n        owner = msg.sender;\n    }\n\n    function withdraw() external isOwner() {\n        msg.sender.transfer(address(this).balance);\n    }\n}\n",
   "sourcePath": "/Users/veronicazheng/src/smart-contracts-testing/contracts/slither-examples/Shadow.sol",
   "ast": {
@@ -131,7 +132,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 642,
+                            "referencedDeclaration": 645,
                             "src": "286:3:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -170,10 +171,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        645,
-                        646
+                        648,
+                        649
                       ],
-                      "referencedDeclaration": 645,
+                      "referencedDeclaration": 648,
                       "src": "269:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -321,7 +322,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 642,
+                        "referencedDeclaration": 645,
                         "src": "488:3:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -400,7 +401,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 663,
+                              "referencedDeclaration": 667,
                               "src": "588:4:3",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_DerivedContract_$176",
@@ -472,7 +473,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 642,
+                          "referencedDeclaration": 645,
                           "src": "560:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -687,7 +688,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 642,
+                            "referencedDeclaration": 645,
                             "src": "286:3:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -726,10 +727,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        645,
-                        646
+                        648,
+                        649
                       ],
-                      "referencedDeclaration": 645,
+                      "referencedDeclaration": 648,
                       "src": "269:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -877,7 +878,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 642,
+                        "referencedDeclaration": 645,
                         "src": "488:3:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -956,7 +957,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 663,
+                              "referencedDeclaration": 667,
                               "src": "588:4:3",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_DerivedContract_$176",
@@ -1028,7 +1029,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 642,
+                          "referencedDeclaration": 645,
                           "src": "560:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1137,11 +1138,11 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+    "version": "0.5.12+commit.7709ece9.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.1",
-  "updatedAt": "2019-11-24T21:13:00.264Z",
+  "schemaVersion": "3.0.19",
+  "updatedAt": "2019-11-24T22:49:53.707Z",
   "devdoc": {
     "methods": {}
   },

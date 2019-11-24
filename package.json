@@ -7,17 +7,21 @@
     "test": "test"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^2.4.0"
+    "@openzeppelin/contracts": "^2.4.0",
+    "script": "^0.1.4",
+    "truffle": "^5.1.1"
   },
   "devDependencies": {
     "prettier": "^1.19.1",
-    "prettier-plugin-solidity": "^1.0.0-alpha.34"
+    "prettier-plugin-solidity": "^1.0.0-alpha.34",
+    "solidity-coverage": "^0.6.7"
   },
   "scripts": {
     "prettier": "prettier --write contracts/**/*.sol",
     "lint": "solhint --max-warnings 0 \"contracts/**/*.sol\"",
     "compile": "truffle compile",
     "test": "truffle test",
+    "coverage": "npx solidity-coverage",
     "migrate": "truffle migrate"
   },
   "repository": {

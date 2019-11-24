@@ -2,20 +2,6 @@
   "contractName": "Roulette",
   "abi": [
     {
-      "constant": true,
-      "inputs": [],
-      "name": "pastBlockTime",
-      "outputs": [
-        {
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
       "inputs": [],
       "payable": true,
       "stateMutability": "payable",
@@ -25,12 +11,28 @@
       "payable": true,
       "stateMutability": "payable",
       "type": "fallback"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "pastBlockTime",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
     }
   ],
-  "bytecode": "0x6080604052610142806100136000396000f3fe608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806358d02b09146100e5575b678ac7230489e800003414151561005757600080fd5b600054421415151561006857600080fd5b426000819055506000600f4281151561007d57fe5b0614156100e3573373ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f193505050501580156100e1573d6000803e3d6000fd5b505b005b3480156100f157600080fd5b506100fa610110565b6040518082815260200191505060405180910390f35b6000548156fea165627a7a723058202018d7eb1f14a7c8933332705767ac33bc2f9e2000f072ff173342a7955f8c960029",
-  "deployedBytecode": "0x608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806358d02b09146100e5575b678ac7230489e800003414151561005757600080fd5b600054421415151561006857600080fd5b426000819055506000600f4281151561007d57fe5b0614156100e3573373ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f193505050501580156100e1573d6000803e3d6000fd5b505b005b3480156100f157600080fd5b506100fa610110565b6040518082815260200191505060405180910390f35b6000548156fea165627a7a723058202018d7eb1f14a7c8933332705767ac33bc2f9e2000f072ff173342a7955f8c960029",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"constructor\"},{\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"fallback\"},{\"constant\":true,\"inputs\":[],\"name\":\"pastBlockTime\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/solhint-examples/Roulette.sol\":\"Roulette\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/solhint-examples/Roulette.sol\":{\"keccak256\":\"0xec2ff8a9ba16ef99a34e7f0aef530771c2edb01111be08f0d5a4359efc1ee990\",\"urls\":[\"bzz-raw://b7b0c61fec7c9dec9e4cc5bafc67039f3cb81206424c22fbf5c3374e09d21d85\",\"dweb:/ipfs/QmYcgSntTr3Nnjy1WfPhnNWcAHcTxxRwpSR32JmFwPsDav\"]}},\"version\":1}",
+  "bytecode": "0x6080604052610118806100136000396000f3fe608060405260043610601c5760003560e01c806358d02b091460b5575b678ac7230489e800003414602f57600080fd5b600054421415603d57600080fd5b426000819055506000600f4281604f57fe5b06141560b3573373ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f1935050505015801560b1573d6000803e3d6000fd5b505b005b34801560c057600080fd5b5060c760dd565b6040518082815260200191505060405180910390f35b6000548156fea265627a7a72315820e06c4ff6caca8d23aab2028b53f541ea7e65ad4ccaa4d8425ea47f1a4dd04fc064736f6c634300050c0032",
+  "deployedBytecode": "0x608060405260043610601c5760003560e01c806358d02b091460b5575b678ac7230489e800003414602f57600080fd5b600054421415603d57600080fd5b426000819055506000600f4281604f57fe5b06141560b3573373ffffffffffffffffffffffffffffffffffffffff166108fc3073ffffffffffffffffffffffffffffffffffffffff16319081150290604051600060405180830381858888f1935050505015801560b1573d6000803e3d6000fd5b505b005b34801560c057600080fd5b5060c760dd565b6040518082815260200191505060405180910390f35b6000548156fea265627a7a72315820e06c4ff6caca8d23aab2028b53f541ea7e65ad4ccaa4d8425ea47f1a4dd04fc064736f6c634300050c0032",
   "sourceMap": "281:519:7:-;;;;;;;;;",
-  "deployedSourceMap": "281:519:7:-;;;;;;;;;;;;;;;;;;;;;535:8;522:9;:21;514:30;;;;;;;;599:13;;592:3;:20;;584:29;;;;;;;;671:3;655:13;:19;;;;700:1;694:2;688:3;:8;;;;;;;;:13;684:108;;;739:10;:19;;:42;767:4;759:21;;;739:42;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;739:42:7;684:108;281:519;305:28;;8:9:-1;5:2;;;30:1;27;20:12;5:2;305:28:7;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "deployedSourceMap": "281:519:7:-;;;;;;;;;;;;;;;;;;535:8;522:9;:21;514:30;;;;;;599:13;;592:3;:20;;584:29;;;;;;671:3;655:13;:19;;;;700:1;694:2;688:3;:8;;;;;;:13;684:108;;;739:10;:19;;:42;767:4;759:21;;;739:42;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;739:42:7;684:108;281:519;305:28;;8:9:-1;5:2;;;30:1;27;20:12;5:2;305:28:7;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;:::o",
   "source": "// From https://github.com/sigp/solidity-security-blog\n// Block time manipulation\n\n// block.timestamp or its alias now can be manipulated by miners if they have some incentive to do so.\n// Fix: use block.number and an average block time to estimate times\n\npragma solidity ^0.5.0;\n\ncontract Roulette {\n    uint256 public pastBlockTime; // Forces one bet per block\n\n    constructor() public payable {} // initially fund contract\n\n    // fallback function used to make a bet\n    function() external payable {\n        require(msg.value == 10 ether); // must send 10 ether to play\n        require(now != pastBlockTime); // only 1 transaction per block\n        pastBlockTime = now;\n        if (now % 15 == 0) {\n            // winner\n            msg.sender.transfer(address(this).balance);\n        }\n    }\n}\n",
   "sourcePath": "/Users/veronicazheng/src/smart-contracts-testing/contracts/solhint-examples/Roulette.sol",
   "ast": {
@@ -154,7 +156,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 642,
+                            "referencedDeclaration": 645,
                             "src": "522:3:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -213,10 +215,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        645,
-                        646
+                        648,
+                        649
                       ],
-                      "referencedDeclaration": 645,
+                      "referencedDeclaration": 648,
                       "src": "514:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -262,7 +264,7 @@
                           "name": "now",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 644,
+                          "referencedDeclaration": 647,
                           "src": "592:3:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -302,10 +304,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        645,
-                        646
+                        648,
+                        649
                       ],
-                      "referencedDeclaration": 645,
+                      "referencedDeclaration": 648,
                       "src": "584:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -359,7 +361,7 @@
                       "name": "now",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 644,
+                      "referencedDeclaration": 647,
                       "src": "671:3:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -405,7 +407,7 @@
                         "name": "now",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 644,
+                        "referencedDeclaration": 647,
                         "src": "688:3:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -488,7 +490,7 @@
                                     "name": "this",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 675,
+                                    "referencedDeclaration": 679,
                                     "src": "767:4:7",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_contract$_Roulette_$329",
@@ -560,7 +562,7 @@
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 642,
+                                "referencedDeclaration": 645,
                                 "src": "739:3:7",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
@@ -771,7 +773,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 642,
+                            "referencedDeclaration": 645,
                             "src": "522:3:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -830,10 +832,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        645,
-                        646
+                        648,
+                        649
                       ],
-                      "referencedDeclaration": 645,
+                      "referencedDeclaration": 648,
                       "src": "514:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -879,7 +881,7 @@
                           "name": "now",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 644,
+                          "referencedDeclaration": 647,
                           "src": "592:3:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -919,10 +921,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        645,
-                        646
+                        648,
+                        649
                       ],
-                      "referencedDeclaration": 645,
+                      "referencedDeclaration": 648,
                       "src": "584:7:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -976,7 +978,7 @@
                       "name": "now",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 644,
+                      "referencedDeclaration": 647,
                       "src": "671:3:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1022,7 +1024,7 @@
                         "name": "now",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 644,
+                        "referencedDeclaration": 647,
                         "src": "688:3:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1105,7 +1107,7 @@
                                     "name": "this",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 675,
+                                    "referencedDeclaration": 679,
                                     "src": "767:4:7",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_contract$_Roulette_$329",
@@ -1177,7 +1179,7 @@
                                 "name": "msg",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 642,
+                                "referencedDeclaration": 645,
                                 "src": "739:3:7",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_magic_message",
@@ -1269,11 +1271,11 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+    "version": "0.5.12+commit.7709ece9.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.1",
-  "updatedAt": "2019-11-24T21:13:00.267Z",
+  "schemaVersion": "3.0.19",
+  "updatedAt": "2019-11-24T22:49:53.715Z",
   "devdoc": {
     "methods": {}
   },

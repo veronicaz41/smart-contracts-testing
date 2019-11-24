@@ -5,10 +5,12 @@
       "constant": true,
       "inputs": [
         {
+          "internalType": "uint256",
           "name": "amount",
           "type": "uint256"
         },
         {
+          "internalType": "uint256",
           "name": "conversionRate",
           "type": "uint256"
         }
@@ -16,20 +18,21 @@
       "name": "convert",
       "outputs": [
         {
+          "internalType": "uint256",
           "name": "convertedAmount",
           "type": "uint256"
         }
       ],
       "payable": false,
       "stateMutability": "pure",
-      "type": "function",
-      "signature": "0x96e4ee3d"
+      "type": "function"
     }
   ],
-  "bytecode": "0x60dd61002f600b82828239805160001a6073146000811461001f57610021565bfe5b5030600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600436106056576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806396e4ee3d14605b575b600080fd5b608e60048036036040811015606f57600080fd5b81019080803590602001909291908035906020019092919050505060a4565b6040518082815260200191505060405180910390f35b600081830290509291505056fea165627a7a7230582088deb7b7c9e0ef68aa311c77f56034301bfb99d28781dd62aa7548c66cd09d0b0029",
-  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600436106056576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806396e4ee3d14605b575b600080fd5b608e60048036036040811015606f57600080fd5b81019080803590602001909291908035906020019092919050505060a4565b6040518082815260200191505060405180910390f35b600081830290509291505056fea165627a7a7230582088deb7b7c9e0ef68aa311c77f56034301bfb99d28781dd62aa7548c66cd09d0b0029",
-  "sourceMap": "78:205:8:-;;132:2:-1;166:7;155:9;146:7;137:37;252:7;246:14;243:1;238:23;232:4;229:33;270:1;265:20;;;;222:63;;265:20;274:9;222:63;;298:9;295:1;288:20;328:4;319:7;311:22;352:7;343;336:24",
-  "deployedSourceMap": "78:205:8:-;;;;;;;;;;;;;;;;;;;;;;;;;;;103:178;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;103:178:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;205:23;260:14;251:6;:23;244:30;;103:178;;;;:::o",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"conversionRate\",\"type\":\"uint256\"}],\"name\":\"convert\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"convertedAmount\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/truffle-examples/ConvertLib.sol\":\"ConvertLib\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/truffle-examples/ConvertLib.sol\":{\"keccak256\":\"0x676ac790b775971c752b99ac2b19a238338d7af0d8ca1ab120d2ceae958c4efa\",\"urls\":[\"bzz-raw://a07f139dcc264e6f98ae800288c3a5b07e4587ee3458eef66308dbec17242436\",\"dweb:/ipfs/QmT3STkuzaTh892TvARR7dUYo1CuBKGvdpxwQ5RWKTEer6\"]}},\"version\":1}",
+  "bytecode": "0x60c3610025600b82828239805160001a60731461001857fe5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361060335760003560e01c806396e4ee3d146038575b600080fd5b606b60048036036040811015604c57600080fd5b8101908080359060200190929190803590602001909291905050506081565b6040518082815260200191505060405180910390f35b600081830290509291505056fea265627a7a723158202d2ba805c940ea2dcdf998f5d25b221c217ba26f7f9352a6b89339e2462f00dd64736f6c634300050c0032",
+  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361060335760003560e01c806396e4ee3d146038575b600080fd5b606b60048036036040811015604c57600080fd5b8101908080359060200190929190803590602001909291905050506081565b6040518082815260200191505060405180910390f35b600081830290509291505056fea265627a7a723158202d2ba805c940ea2dcdf998f5d25b221c217ba26f7f9352a6b89339e2462f00dd64736f6c634300050c0032",
+  "sourceMap": "78:205:8:-;;132:2:-1;166:7;155:9;146:7;137:37;255:7;249:14;246:1;241:23;235:4;232:33;222:2;;269:9;222:2;293:9;290:1;283:20;323:4;314:7;306:22;347:7;338;331:24",
+  "deployedSourceMap": "78:205:8:-;;;;;;;;;;;;;;;;;;;;;;;;103:178;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;103:178:8;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;205:23;260:14;251:6;:23;244:30;;103:178;;;;:::o",
   "source": "// From https://github.com/truffle-box/metacoin-box\n\npragma solidity ^0.5.0;\n\nlibrary ConvertLib {\n    function convert(uint256 amount, uint256 conversionRate)\n        public\n        pure\n        returns (uint256 convertedAmount)\n    {\n        return amount * conversionRate;\n    }\n}\n",
   "sourcePath": "/Users/veronicazheng/src/smart-contracts-testing/contracts/truffle-examples/ConvertLib.sol",
   "ast": {
@@ -444,7 +447,7 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+    "version": "0.5.12+commit.7709ece9.Emscripten.clang"
   },
   "networks": {
     "1574580996948": {
@@ -454,8 +457,8 @@
       "transactionHash": "0x557288ee934bff015638c448176c36d9a6f9d0be9674d4ac060fe485ef181287"
     }
   },
-  "schemaVersion": "3.0.1",
-  "updatedAt": "2019-11-24T21:38:18.818Z",
+  "schemaVersion": "3.0.19",
+  "updatedAt": "2019-11-24T22:49:53.721Z",
   "devdoc": {
     "methods": {}
   },

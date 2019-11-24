@@ -11,10 +11,11 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b5061015a806100206000396000f3fe608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635fd8c71014610046575b600080fd5b34801561005257600080fd5b5061005b61005d565b005b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905060008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055503373ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f1935050505015801561012a573d6000803e3d6000fd5b505056fea165627a7a7230582011d6d238e0f9e459ada32d8428c2bf09fb99ff90afa8be7832add9809081c71e0029",
-  "deployedBytecode": "0x608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635fd8c71014610046575b600080fd5b34801561005257600080fd5b5061005b61005d565b005b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905060008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055503373ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f1935050505015801561012a573d6000803e3d6000fd5b505056fea165627a7a7230582011d6d238e0f9e459ada32d8428c2bf09fb99ff90afa8be7832add9809081c71e0029",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"withdrawBalance\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/reentrancy/EtherStoreFixed.sol\":\"EtherStoreFixed\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/reentrancy/EtherStoreFixed.sol\":{\"keccak256\":\"0x7c246cb2a413193112f7dd114230e139b6218a563763eb69245b2ec01d23a545\",\"urls\":[\"bzz-raw://7f23bd593cf81a86394cd82116e936b4d9ed0193d224632886025ae73dbfa2a8\",\"dweb:/ipfs/QmXjFscLh9UDHZxqCjrRgeDhNqS3mHcoLny7kmKs1T35Pb\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610140806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c80635fd8c71014610030575b600080fd5b61003861003a565b005b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905060008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055503373ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f19350505050158015610107573d6000803e3d6000fd5b505056fea265627a7a723158202b0620106d371170aa7520a85579ea59e4c25ac155f6356f1719a27dbc2c141264736f6c634300050c0032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c80635fd8c71014610030575b600080fd5b61003861003a565b005b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905060008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055503373ffffffffffffffffffffffffffffffffffffffff166108fc829081150290604051600060405180830381858888f19350505050158015610107573d6000803e3d6000fd5b505056fea265627a7a723158202b0620106d371170aa7520a85579ea59e4c25ac155f6356f1719a27dbc2c141264736f6c634300050c0032",
   "sourceMap": "383:363:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;383:363:2;;;;;;;",
-  "deployedSourceMap": "383:363:2:-;;;;;;;;;;;;;;;;;;;;;;;;469:275;;8:9:-1;5:2;;;30:1;27;20:12;5:2;469:275:2;;;;;;;515:24;542:12;:24;555:10;542:24;;;;;;;;;;;;;;;;515:51;;645:1;618:12;:24;631:10;618:24;;;;;;;;;;;;;;;:28;;;;700:10;:19;;:37;720:16;700:37;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;700:37:2;469:275;:::o",
+  "deployedSourceMap": "383:363:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;383:363:2;;;;;;;;;;;;;;;;;;;469:275;;;:::i;:::-;;;515:24;542:12;:24;555:10;542:24;;;;;;;;;;;;;;;;515:51;;645:1;618:12;:24;631:10;618:24;;;;;;;;;;;;;;;:28;;;;700:10;:19;;:37;720:16;700:37;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;700:37:2;469:275;:::o",
   "source": "// From https://github.com/sigp/solidity-security-blog\n// Fixed the Re-Entrancy vulneravility\n// 1. user transfer()\n// 2. finish all internal work (ie. state changes) first before calling extenral functions\n// 3. can also use mutex, but need to be very careful about deadlocks nad livelocks\n//    can use OpenZepplin's ReentrancyGuard nonReentrant modifier\n\npragma solidity ^0.5.0;\n\ncontract EtherStoreFixed {\n    mapping(address => uint256) private userBalances;\n\n    function withdrawBalance() external {\n        uint256 amountToWithdraw = userBalances[msg.sender];\n        // finish all internal work first\n        userBalances[msg.sender] = 0;\n        // use transfer(), limit gas (2300)\n        msg.sender.transfer(amountToWithdraw);\n    }\n}\n",
   "sourcePath": "/Users/veronicazheng/src/smart-contracts-testing/contracts/reentrancy/EtherStoreFixed.sol",
   "ast": {
@@ -159,7 +160,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 642,
+                        "referencedDeclaration": 645,
                         "src": "555:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -226,7 +227,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 642,
+                          "referencedDeclaration": 645,
                           "src": "631:3:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -321,7 +322,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 642,
+                          "referencedDeclaration": 645,
                           "src": "700:3:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -550,7 +551,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 642,
+                        "referencedDeclaration": 645,
                         "src": "555:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -617,7 +618,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 642,
+                          "referencedDeclaration": 645,
                           "src": "631:3:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -712,7 +713,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 642,
+                          "referencedDeclaration": 645,
                           "src": "700:3:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -801,11 +802,11 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+    "version": "0.5.12+commit.7709ece9.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.1",
-  "updatedAt": "2019-11-24T21:13:00.264Z",
+  "schemaVersion": "3.0.19",
+  "updatedAt": "2019-11-24T22:49:53.703Z",
   "devdoc": {
     "methods": {}
   },

@@ -11,10 +11,11 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x6080604052348015600f57600080fd5b50609d8061001e6000396000f3fe608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806341c0e1b5146044575b600080fd5b348015604f57600080fd5b5060566058565b005b3373ffffffffffffffffffffffffffffffffffffffff16fffea165627a7a7230582032a0c5da6af52ae8c9eb89024419b10206a274f47c0f5756163dc617c7e0179a0029",
-  "deployedBytecode": "0x608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806341c0e1b5146044575b600080fd5b348015604f57600080fd5b5060566058565b005b3373ffffffffffffffffffffffffffffffffffffffff16fffea165627a7a7230582032a0c5da6af52ae8c9eb89024419b10206a274f47c0f5756163dc617c7e0179a0029",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"kill\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/slither-examples/Suicidal.sol\":\"Suicidal\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/slither-examples/Suicidal.sol\":{\"keccak256\":\"0x2bda956b86de3a579649c5f4e1eebd56afa0cfc006627bd13413d786886f0cbd\",\"urls\":[\"bzz-raw://b8951bf337697c3c6367f55bf9adaafdd585319046fd2e398bf9885490c4ab3b\",\"dweb:/ipfs/QmaTCTCCEJMYw6Rg2BsLe1vnmUxt6FrssMptbFMiPJcUbU\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b5060838061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806341c0e1b514602d575b600080fd5b60336035565b005b3373ffffffffffffffffffffffffffffffffffffffff16fffea265627a7a72315820e6ad9b3f199884a9558111843303900d5f477382cf34423f3668b1a90d37928364736f6c634300050c0032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806341c0e1b514602d575b600080fd5b60336035565b005b3373ffffffffffffffffffffffffffffffffffffffff16fffea265627a7a72315820e6ad9b3f199884a9558111843303900d5f477382cf34423f3668b1a90d37928364736f6c634300050c0032",
   "sourceMap": "161:92:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;161:92:4;;;;;;;",
-  "deployedSourceMap": "161:92:4:-;;;;;;;;;;;;;;;;;;;;;;;;185:66;;8:9:-1;5:2;;;30:1;27;20:12;5:2;185:66:4;;;;;;;233:10;220:24;;",
+  "deployedSourceMap": "161:92:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;161:92:4;;;;;;;;;;;;;;;;;;;185:66;;;:::i;:::-;;;233:10;220:24;;",
   "source": "// From https://github.com/crytic/slither/wiki/Detector-Documentation\n// Unprotected call to function executing selfdestruct / suicide\n\npragma solidity ^0.5.0;\n\ncontract Suicidal {\n    function kill() external {\n        selfdestruct(msg.sender);\n    }\n}\n",
   "sourcePath": "/Users/veronicazheng/src/smart-contracts-testing/contracts/slither-examples/Suicidal.sol",
   "ast": {
@@ -69,7 +70,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 642,
+                          "referencedDeclaration": 645,
                           "src": "233:3:4",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -102,7 +103,7 @@
                       "name": "selfdestruct",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 650,
+                      "referencedDeclaration": 653,
                       "src": "220:12:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_payable_$returns$__$",
@@ -213,7 +214,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 642,
+                          "referencedDeclaration": 645,
                           "src": "233:3:4",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -246,7 +247,7 @@
                       "name": "selfdestruct",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 650,
+                      "referencedDeclaration": 653,
                       "src": "220:12:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_payable_$returns$__$",
@@ -307,11 +308,11 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+    "version": "0.5.12+commit.7709ece9.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.1",
-  "updatedAt": "2019-11-24T21:13:00.263Z",
+  "schemaVersion": "3.0.19",
+  "updatedAt": "2019-11-24T22:49:53.708Z",
   "devdoc": {
     "methods": {}
   },

@@ -4,46 +4,50 @@
     {
       "inputs": [
         {
+          "internalType": "address",
           "name": "owner",
           "type": "address"
         }
       ],
       "payable": false,
       "stateMutability": "nonpayable",
-      "type": "constructor",
-      "signature": "constructor"
+      "type": "constructor"
     },
     {
       "anonymous": false,
       "inputs": [
         {
           "indexed": true,
+          "internalType": "address",
           "name": "_from",
           "type": "address"
         },
         {
           "indexed": true,
+          "internalType": "address",
           "name": "_to",
           "type": "address"
         },
         {
           "indexed": false,
+          "internalType": "uint256",
           "name": "_value",
           "type": "uint256"
         }
       ],
       "name": "Transfer",
-      "type": "event",
-      "signature": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+      "type": "event"
     },
     {
       "constant": false,
       "inputs": [
         {
+          "internalType": "address",
           "name": "receiver",
           "type": "address"
         },
         {
+          "internalType": "uint256",
           "name": "amount",
           "type": "uint256"
         }
@@ -51,19 +55,20 @@
       "name": "sendCoin",
       "outputs": [
         {
+          "internalType": "bool",
           "name": "sufficient",
           "type": "bool"
         }
       ],
       "payable": false,
       "stateMutability": "nonpayable",
-      "type": "function",
-      "signature": "0x90b98a11"
+      "type": "function"
     },
     {
       "constant": true,
       "inputs": [
         {
+          "internalType": "address",
           "name": "addr",
           "type": "address"
         }
@@ -71,19 +76,20 @@
       "name": "getBalanceInEth",
       "outputs": [
         {
+          "internalType": "uint256",
           "name": "",
           "type": "uint256"
         }
       ],
       "payable": false,
       "stateMutability": "view",
-      "type": "function",
-      "signature": "0x7bd703e8"
+      "type": "function"
     },
     {
       "constant": true,
       "inputs": [
         {
+          "internalType": "address",
           "name": "addr",
           "type": "address"
         }
@@ -91,20 +97,21 @@
       "name": "getBalance",
       "outputs": [
         {
+          "internalType": "uint256",
           "name": "",
           "type": "uint256"
         }
       ],
       "payable": false,
       "stateMutability": "view",
-      "type": "function",
-      "signature": "0xf8b2cb4f"
+      "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b506040516020806104bc8339810180604052602081101561003057600080fd5b81019080805190602001909291905050506127106000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000208190555050610426806100966000396000f3fe608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680637bd703e81461005c57806390b98a11146100c1578063f8b2cb4f14610134575b600080fd5b34801561006857600080fd5b506100ab6004803603602081101561007f57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610199565b6040518082815260200191505060405180910390f35b3480156100cd57600080fd5b5061011a600480360360408110156100e457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610259565b604051808215151515815260200191505060405180910390f35b34801561014057600080fd5b506101836004803603602081101561015757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103b2565b6040518082815260200191505060405180910390f35b600073__ConvertLib____________________________6396e4ee3d6101be846103b2565b60026040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808381526020018281526020019250505060206040518083038186803b15801561021757600080fd5b505af415801561022b573d6000803e3d6000fd5b505050506040513d602081101561024157600080fd5b81019080805190602001909291905050509050919050565b6000816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410156102aa57600090506103ac565b816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540392505081905550816000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a3600190505b92915050565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905091905056fea165627a7a72305820ff2e8f309d2555e54edbb680b8403fad77e6c2b810aea7c2ee9bdf995a25265c0029",
-  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680637bd703e81461005c57806390b98a11146100c1578063f8b2cb4f14610134575b600080fd5b34801561006857600080fd5b506100ab6004803603602081101561007f57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610199565b6040518082815260200191505060405180910390f35b3480156100cd57600080fd5b5061011a600480360360408110156100e457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610259565b604051808215151515815260200191505060405180910390f35b34801561014057600080fd5b506101836004803603602081101561015757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103b2565b6040518082815260200191505060405180910390f35b600073__ConvertLib____________________________6396e4ee3d6101be846103b2565b60026040518363ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808381526020018281526020019250505060206040518083038186803b15801561021757600080fd5b505af415801561022b573d6000803e3d6000fd5b505050506040513d602081101561024157600080fd5b81019080805190602001909291905050509050919050565b6000816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410156102aa57600090506103ac565b816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540392505081905550816000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a3600190505b92915050565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905091905056fea165627a7a72305820ff2e8f309d2555e54edbb680b8403fad77e6c2b810aea7c2ee9bdf995a25265c0029",
-  "sourceMap": "106:805:9:-;;;262:74;8:9:-1;5:2;;;30:1;27;20:12;5:2;262:74:9;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;262:74:9;;;;;;;;;;;;;;;;324:5;306:8;:15;315:5;306:15;;;;;;;;;;;;;;;:23;;;;262:74;106:805;;;;;;",
-  "deployedSourceMap": "106:805:9:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;669:132;;8:9:-1;5:2;;;30:1;27;20:12;5:2;669:132:9;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;669:132:9;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;342:321;;8:9:-1;5:2;;;30:1;27;20:12;5:2;342:321:9;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;342:321:9;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;807:102;;8:9:-1;5:2;;;30:1;27;20:12;5:2;807:102:9;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;807:102:9;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;669:132;729:7;755:10;:18;774:16;785:4;774:10;:16::i;:::-;792:1;755:39;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;755:39:9;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;755:39:9;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;755:39:9;;;;;;;;;;;;;;;;748:46;;669:132;;;:::o;342:321::-;426:15;484:6;461:8;:20;470:10;461:20;;;;;;;;;;;;;;;;:29;457:47;;;499:5;492:12;;;;457:47;538:6;514:8;:20;523:10;514:20;;;;;;;;;;;;;;;;:30;;;;;;;;;;;576:6;554:8;:18;563:8;554:18;;;;;;;;;;;;;;;;:28;;;;;;;;;;;618:8;597:38;;606:10;597:38;;;628:6;597:38;;;;;;;;;;;;;;;;;;652:4;645:11;;342:321;;;;;:::o;807:102::-;862:7;888:8;:14;897:4;888:14;;;;;;;;;;;;;;;;881:21;;807:102;;;:::o",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"_from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"getBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"getBalanceInEth\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"receiver\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"sendCoin\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"sufficient\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/truffle-examples/MetaCoin.sol\":\"MetaCoin\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/truffle-examples/ConvertLib.sol\":{\"keccak256\":\"0x676ac790b775971c752b99ac2b19a238338d7af0d8ca1ab120d2ceae958c4efa\",\"urls\":[\"bzz-raw://a07f139dcc264e6f98ae800288c3a5b07e4587ee3458eef66308dbec17242436\",\"dweb:/ipfs/QmT3STkuzaTh892TvARR7dUYo1CuBKGvdpxwQ5RWKTEer6\"]},\"/Users/veronicazheng/src/smart-contracts-testing/contracts/truffle-examples/MetaCoin.sol\":{\"keccak256\":\"0xcd5f90c4fa7e784310e602ecd7ee82f808f5c81e8e4551eb2b9ced0b647077a2\",\"urls\":[\"bzz-raw://20af39ebe35fffc7909be9f19197d3ecc92808e92bdd57eb4a657f15f6fb1a75\",\"dweb:/ipfs/QmbHrTgDqR6ErU1f7ha7tNVCrhVoVMN4SZ4vD1vcaPu2ai\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060405161046f38038061046f8339818101604052602081101561003357600080fd5b81019080805190602001909291905050506127106000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550506103d6806100996000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80637bd703e81461004657806390b98a111461009e578063f8b2cb4f14610104575b600080fd5b6100886004803603602081101561005c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061015c565b6040518082815260200191505060405180910390f35b6100ea600480360360408110156100b457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610200565b604051808215151515815260200191505060405180910390f35b6101466004803603602081101561011a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610359565b6040518082815260200191505060405180910390f35b600073__ConvertLib____________________________6396e4ee3d61018184610359565b60026040518363ffffffff1660e01b8152600401808381526020018281526020019250505060206040518083038186803b1580156101be57600080fd5b505af41580156101d2573d6000803e3d6000fd5b505050506040513d60208110156101e857600080fd5b81019080805190602001909291905050509050919050565b6000816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410156102515760009050610353565b816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540392505081905550816000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a3600190505b92915050565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905091905056fea265627a7a723158200d0c63b5f871d1a0f7d26741860631977ecd225c81e276a2b89d13fef569dd4d64736f6c634300050c0032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80637bd703e81461004657806390b98a111461009e578063f8b2cb4f14610104575b600080fd5b6100886004803603602081101561005c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061015c565b6040518082815260200191505060405180910390f35b6100ea600480360360408110156100b457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610200565b604051808215151515815260200191505060405180910390f35b6101466004803603602081101561011a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610359565b6040518082815260200191505060405180910390f35b600073__ConvertLib____________________________6396e4ee3d61018184610359565b60026040518363ffffffff1660e01b8152600401808381526020018281526020019250505060206040518083038186803b1580156101be57600080fd5b505af41580156101d2573d6000803e3d6000fd5b505050506040513d60208110156101e857600080fd5b81019080805190602001909291905050509050919050565b6000816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205410156102515760009050610353565b816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540392505081905550816000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a3600190505b92915050565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905091905056fea265627a7a723158200d0c63b5f871d1a0f7d26741860631977ecd225c81e276a2b89d13fef569dd4d64736f6c634300050c0032",
+  "sourceMap": "106:805:9:-;;;262:74;8:9:-1;5:2;;;30:1;27;20:12;5:2;262:74:9;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;262:74:9;;;;;;;;;;;;;;;;324:5;306:8;:15;315:5;306:15;;;;;;;;;;;;;;;:23;;;;262:74;106:805;;;;;;",
+  "deployedSourceMap": "106:805:9:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;106:805:9;;;;;;;;;;;;;;;;;;;;;;;;;;;;;669:132;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;669:132:9;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;342:321;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;342:321:9;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;807:102;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;807:102:9;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;669:132;729:7;755:10;:18;774:16;785:4;774:10;:16::i;:::-;792:1;755:39;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;755:39:9;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;755:39:9;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;755:39:9;;;;;;;;;;;;;;;;748:46;;669:132;;;:::o;342:321::-;426:15;484:6;461:8;:20;470:10;461:20;;;;;;;;;;;;;;;;:29;457:47;;;499:5;492:12;;;;457:47;538:6;514:8;:20;523:10;514:20;;;;;;;;;;;;;;;;:30;;;;;;;;;;;576:6;554:8;:18;563:8;554:18;;;;;;;;;;;;;;;;:28;;;;;;;;;;;618:8;597:38;;606:10;597:38;;;628:6;597:38;;;;;;;;;;;;;;;;;;652:4;645:11;;342:321;;;;;:::o;807:102::-;862:7;888:8;:14;897:4;888:14;;;;;;;;;;;;;;;;881:21;;807:102;;;:::o",
   "source": "// From https://github.com/truffle-box/metacoin-box\n\npragma solidity ^0.5.0;\n\nimport \"./ConvertLib.sol\";\n\ncontract MetaCoin {\n    mapping(address => uint256) private balances;\n\n    event Transfer(address indexed _from, address indexed _to, uint256 _value);\n\n    constructor(address owner) public {\n        balances[owner] = 10000;\n    }\n\n    function sendCoin(address receiver, uint256 amount)\n        public\n        returns (bool sufficient)\n    {\n        if (balances[msg.sender] < amount) return false;\n        balances[msg.sender] -= amount;\n        balances[receiver] += amount;\n        emit Transfer(msg.sender, receiver, amount);\n        return true;\n    }\n\n    function getBalanceInEth(address addr) public view returns (uint256) {\n        return ConvertLib.convert(getBalance(addr), 2);\n    }\n\n    function getBalance(address addr) public view returns (uint256) {\n        return balances[addr];\n    }\n}\n",
   "sourcePath": "/Users/veronicazheng/src/smart-contracts-testing/contracts/truffle-examples/MetaCoin.sol",
   "ast": {
@@ -2523,7 +2530,7 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+    "version": "0.5.12+commit.7709ece9.Emscripten.clang"
   },
   "networks": {
     "1574580996948": {
@@ -2535,8 +2542,8 @@
       "transactionHash": "0x8bb7252d4c17d21a2299dfed8d65c186a79082d18ded31dca15ccabe4e2615ea"
     }
   },
-  "schemaVersion": "3.0.1",
-  "updatedAt": "2019-11-24T21:38:18.823Z",
+  "schemaVersion": "3.0.19",
+  "updatedAt": "2019-11-24T22:49:53.723Z",
   "devdoc": {
     "methods": {}
   },

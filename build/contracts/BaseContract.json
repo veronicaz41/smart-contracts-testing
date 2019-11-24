@@ -1,8 +1,9 @@
 {
   "contractName": "BaseContract",
   "abi": [],
-  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a723058203e0c44b6ba3bfdb4e9d19578c6b8e9d991bb2d74bd074d15904c11253c7661520029",
-  "deployedBytecode": "0x6080604052600080fdfea165627a7a723058203e0c44b6ba3bfdb4e9d19578c6b8e9d991bb2d74bd074d15904c11253c7661520029",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/slither-examples/Shadow.sol\":\"BaseContract\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/slither-examples/Shadow.sol\":{\"keccak256\":\"0x9f684b849fb83db3f7704126660483d585d6955984c2fb64ef9da97ca4ec4e18\",\"urls\":[\"bzz-raw://c6232da11ceae076ee120f62e154c48e9c51c2a0d9536aad9e7aa3a6cb2b8af5\",\"dweb:/ipfs/QmRY6yJ1c8VE7G3yU7pSF8BvMohC2STCdvJxAdTXjRP33s\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a72315820dfed2f4d8753266c0deaf249518bada5ad14258eaff92bc3577455723862964664736f6c634300050c0032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a72315820dfed2f4d8753266c0deaf249518bada5ad14258eaff92bc3577455723862964664736f6c634300050c0032",
   "sourceMap": "124:194:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;124:194:3;;;;;;;",
   "deployedSourceMap": "124:194:3:-;;;;;",
   "source": "// From https://github.com/crytic/slither/wiki/Detector-Documentation\n// State variable shadowing\n\npragma solidity ^0.5.0;\n\ncontract BaseContract {\n    address owner;\n\n    // the owner is never assigned, and this modifier does not work\n    modifier isOwner() {\n        require(owner == msg.sender);\n        _;\n    }\n\n}\n\ncontract DerivedContract is BaseContract {\n    // shadowing the owner in BaseContract, should be removed\n    address owner;\n\n    constructor() public {\n        owner = msg.sender;\n    }\n\n    function withdraw() external isOwner() {\n        msg.sender.transfer(address(this).balance);\n    }\n}\n",
@@ -115,7 +116,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 642,
+                            "referencedDeclaration": 645,
                             "src": "286:3:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -154,10 +155,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        645,
-                        646
+                        648,
+                        649
                       ],
-                      "referencedDeclaration": 645,
+                      "referencedDeclaration": 648,
                       "src": "269:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -305,7 +306,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 642,
+                        "referencedDeclaration": 645,
                         "src": "488:3:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -384,7 +385,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 663,
+                              "referencedDeclaration": 667,
                               "src": "588:4:3",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_DerivedContract_$176",
@@ -456,7 +457,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 642,
+                          "referencedDeclaration": 645,
                           "src": "560:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -671,7 +672,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 642,
+                            "referencedDeclaration": 645,
                             "src": "286:3:3",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -710,10 +711,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        645,
-                        646
+                        648,
+                        649
                       ],
-                      "referencedDeclaration": 645,
+                      "referencedDeclaration": 648,
                       "src": "269:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -861,7 +862,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 642,
+                        "referencedDeclaration": 645,
                         "src": "488:3:3",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -940,7 +941,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 663,
+                              "referencedDeclaration": 667,
                               "src": "588:4:3",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_DerivedContract_$176",
@@ -1012,7 +1013,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 642,
+                          "referencedDeclaration": 645,
                           "src": "560:3:3",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1121,11 +1122,11 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+    "version": "0.5.12+commit.7709ece9.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.1",
-  "updatedAt": "2019-11-24T21:13:00.265Z",
+  "schemaVersion": "3.0.19",
+  "updatedAt": "2019-11-24T22:49:53.705Z",
   "devdoc": {
     "methods": {}
   },

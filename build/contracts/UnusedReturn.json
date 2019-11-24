@@ -5,10 +5,12 @@
       "constant": true,
       "inputs": [
         {
+          "internalType": "uint256",
           "name": "a",
           "type": "uint256"
         },
         {
+          "internalType": "uint256",
           "name": "b",
           "type": "uint256"
         }
@@ -20,10 +22,11 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b50610159806100206000396000f3fe608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806388e5387114610046575b600080fd5b34801561005257600080fd5b506100896004803603604081101561006957600080fd5b81019080803590602001909291908035906020019092919050505061008b565b005b61009e81836100a390919063ffffffff16565b505050565b6000808284019050838110151515610123576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601b8152602001807f536166654d6174683a206164646974696f6e206f766572666c6f77000000000081525060200191505060405180910390fd5b809150509291505056fea165627a7a72305820b2dc78350951f335942d64d823793455b460df74dfc1c5f8153a9bd358c62b5e0029",
-  "deployedBytecode": "0x608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806388e5387114610046575b600080fd5b34801561005257600080fd5b506100896004803603604081101561006957600080fd5b81019080803590602001909291908035906020019092919050505061008b565b005b61009e81836100a390919063ffffffff16565b505050565b6000808284019050838110151515610123576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601b8152602001807f536166654d6174683a206164646974696f6e206f766572666c6f77000000000081525060200191505060405180910390fd5b809150509291505056fea165627a7a72305820b2dc78350951f335942d64d823793455b460df74dfc1c5f8153a9bd358c62b5e0029",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"a\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"b\",\"type\":\"uint256\"}],\"name\":\"my_func\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/slither-examples/UnusedReturn.sol\":\"UnusedReturn\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/slither-examples/UnusedReturn.sol\":{\"keccak256\":\"0xb94857e073b34ffaead05217f688323061a30924554c27af6f18f79b8c1ba599\",\"urls\":[\"bzz-raw://ee9435d218236339f6b16cc2694038d3c1234a6ec72313329a98709370e80bb4\",\"dweb:/ipfs/QmWBtNdmuhGSUu8Qm7uMSeVWodtygDiGt8D3DqaeL48xBA\"]},\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x640b6dee7a4b830bdfd52b5031a07fc2b12209f5b2e29e5d364a7d37f69d8076\",\"urls\":[\"bzz-raw://31113152e1ddb78fe7a4197f247591ca894e93f916867beb708d8e747b6cc74f\",\"dweb:/ipfs/QmbZaJyXdpsYGykVhHH9qpVGQg9DGCxE2QufbCUy3daTgq\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061013d806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c806388e5387114610030575b600080fd5b6100666004803603604081101561004657600080fd5b810190808035906020019092919080359060200190929190505050610068565b005b61007b818361008090919063ffffffff16565b505050565b6000808284019050838110156100fe576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601b8152602001807f536166654d6174683a206164646974696f6e206f766572666c6f77000000000081525060200191505060405180910390fd5b809150509291505056fea265627a7a72315820dee8b0595494e8669d3c8d7ced6f5a30a32c0ca0f6dd0584674989c80eeac31264736f6c634300050c0032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c806388e5387114610030575b600080fd5b6100666004803603604081101561004657600080fd5b810190808035906020019092919080359060200190929190505050610068565b005b61007b818361008090919063ffffffff16565b505050565b6000808284019050838110156100fe576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601b8152602001807f536166654d6174683a206164646974696f6e206f766572666c6f77000000000081525060200191505060405180910390fd5b809150509291505056fea265627a7a72315820dee8b0595494e8669d3c8d7ced6f5a30a32c0ca0f6dd0584674989c80eeac31264736f6c634300050c0032",
   "sourceMap": "166:164:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;166:164:5;;;;;;;",
-  "deployedSourceMap": "166:164:5:-;;;;;;;;;;;;;;;;;;;;;;;;227:101;;8:9:-1;5:2;;;30:1;27;20:12;5:2;227:101:5;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;227:101:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;313:8;319:1;313;:5;;:8;;;;:::i;:::-;;227:101;;:::o;834:176:9:-;892:7;911:9;927:1;923;:5;911:17;;951:1;946;:6;;938:46;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1002:1;995:8;;;834:176;;;;:::o",
+  "deployedSourceMap": "166:164:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;166:164:5;;;;;;;;;;;;;;;;;;;227:101;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;227:101:5;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;313:8;319:1;313;:5;;:8;;;;:::i;:::-;;227:101;;:::o;834:176:10:-;892:7;911:9;927:1;923;:5;911:17;;951:1;946;:6;;938:46;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1002:1;995:8;;;834:176;;;;:::o",
   "source": "// From https://github.com/crytic/slither/wiki/Detector-Documentation\n// Unused return\n\npragma solidity ^0.5.0;\n\nimport \"@openzeppelin/contracts/math/SafeMath.sol\";\n\ncontract UnusedReturn {\n    using SafeMath for uint256;\n\n    function my_func(uint256 a, uint256 b) public pure {\n        // return unused\n        a.add(b);\n    }\n}\n",
   "sourcePath": "/Users/veronicazheng/src/smart-contracts-testing/contracts/slither-examples/UnusedReturn.sol",
   "ast": {
@@ -53,7 +56,7 @@
         "id": 191,
         "nodeType": "ImportDirective",
         "scope": 210,
-        "sourceUnit": 628,
+        "sourceUnit": 631,
         "src": "113:51:5",
         "symbolAliases": [],
         "unitAlias": ""
@@ -78,10 +81,10 @@
               "id": 192,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 627,
+              "referencedDeclaration": 630,
               "src": "200:8:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$627",
+                "typeIdentifier": "t_contract$_SafeMath_$630",
                 "typeString": "library SafeMath"
               }
             },
@@ -149,7 +152,7 @@
                       "lValueRequested": false,
                       "memberName": "add",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 467,
+                      "referencedDeclaration": 470,
                       "src": "313:5:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -288,7 +291,7 @@
         "id": 191,
         "nodeType": "ImportDirective",
         "scope": 210,
-        "sourceUnit": 628,
+        "sourceUnit": 631,
         "src": "113:51:5",
         "symbolAliases": [],
         "unitAlias": ""
@@ -313,10 +316,10 @@
               "id": 192,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 627,
+              "referencedDeclaration": 630,
               "src": "200:8:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$627",
+                "typeIdentifier": "t_contract$_SafeMath_$630",
                 "typeString": "library SafeMath"
               }
             },
@@ -384,7 +387,7 @@
                       "lValueRequested": false,
                       "memberName": "add",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 467,
+                      "referencedDeclaration": 470,
                       "src": "313:5:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -498,11 +501,11 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+    "version": "0.5.12+commit.7709ece9.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.1",
-  "updatedAt": "2019-11-24T21:13:00.263Z",
+  "schemaVersion": "3.0.19",
+  "updatedAt": "2019-11-24T22:49:53.710Z",
   "devdoc": {
     "methods": {}
   },

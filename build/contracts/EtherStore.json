@@ -11,10 +11,11 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b50610189806100206000396000f3fe608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635fd8c71014610046575b600080fd5b34801561005257600080fd5b5061005b61005d565b005b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905060003373ffffffffffffffffffffffffffffffffffffffff168260405180600001905060006040518083038185875af1925050503d8060008114610100576040519150601f19603f3d011682016040523d82523d6000602084013e610105565b606091505b5050905080151561011557600080fd5b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550505056fea165627a7a723058203c901b55a1f6c8ce91094f1974aee246b957c67ad39aa2d8b5d354b665372d410029",
-  "deployedBytecode": "0x608060405260043610610041576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680635fd8c71014610046575b600080fd5b34801561005257600080fd5b5061005b61005d565b005b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905060003373ffffffffffffffffffffffffffffffffffffffff168260405180600001905060006040518083038185875af1925050503d8060008114610100576040519150601f19603f3d011682016040523d82523d6000602084013e610105565b606091505b5050905080151561011557600080fd5b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550505056fea165627a7a723058203c901b55a1f6c8ce91094f1974aee246b957c67ad39aa2d8b5d354b665372d410029",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"withdrawBalance\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/reentrancy/EtherStore.sol\":\"EtherStore\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/reentrancy/EtherStore.sol\":{\"keccak256\":\"0x4d1e187b372ed901b85436a4635fbffab8858f5ef233243243ed69f1c32f733d\",\"urls\":[\"bzz-raw://d0f97cc5db29e39e82363abdda5975f9eb3fa7019c347f230aaf50f6f64d21ec\",\"dweb:/ipfs/QmSPvp9fJqVyoL1AMWskDjmxfpkBuRisuuNnuBGX17Xjkm\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061016d806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c80635fd8c71014610030575b600080fd5b61003861003a565b005b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905060003373ffffffffffffffffffffffffffffffffffffffff168260405180600001905060006040518083038185875af1925050503d80600081146100dd576040519150601f19603f3d011682016040523d82523d6000602084013e6100e2565b606091505b50509050806100f057600080fd5b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550505056fea265627a7a723158205c273dafa8c54b34f86328bc8c031e833c1478fe704d704fc7bd644f11c48bcb64736f6c634300050c0032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c80635fd8c71014610030575b600080fd5b61003861003a565b005b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002054905060003373ffffffffffffffffffffffffffffffffffffffff168260405180600001905060006040518083038185875af1925050503d80600081146100dd576040519150601f19603f3d011682016040523d82523d6000602084013e6100e2565b606091505b50509050806100f057600080fd5b60008060003373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550505056fea265627a7a723158205c273dafa8c54b34f86328bc8c031e833c1478fe704d704fc7bd644f11c48bcb64736f6c634300050c0032",
   "sourceMap": "96:405:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;96:405:1;;;;;;;",
-  "deployedSourceMap": "96:405:1:-;;;;;;;;;;;;;;;;;;;;;;;;177:322;;8:9:-1;5:2;;;30:1;27;20:12;5:2;177:322:1;;;;;;;221:24;248:12;:24;261:10;248:24;;;;;;;;;;;;;;;;221:51;;283:12;301:10;:15;;323:16;301:43;;;;;;;;;;;;;;;;;;;;;;;14:1:-1;21;16:31;;;;75:4;69:11;64:16;;144:4;140:9;133:4;115:16;111:27;107:43;104:1;100:51;94:4;87:65;169:16;166:1;159:27;225:16;222:1;215:4;212:1;208:12;193:49;7:242;;16:31;36:4;31:9;;7:242;;282:62:1;;;446:7;438:16;;;;;;;;491:1;464:12;:24;477:10;464:24;;;;;;;;;;;;;;;:28;;;;177:322;;:::o",
+  "deployedSourceMap": "96:405:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;96:405:1;;;;;;;;;;;;;;;;;;;177:322;;;:::i;:::-;;;221:24;248:12;:24;261:10;248:24;;;;;;;;;;;;;;;;221:51;;283:12;301:10;:15;;323:16;301:43;;;;;;;;;;;;;;;;;;;;;;;14:1:-1;21;16:31;;;;75:4;69:11;64:16;;144:4;140:9;133:4;115:16;111:27;107:43;104:1;100:51;94:4;87:65;169:16;166:1;159:27;225:16;222:1;215:4;212:1;208:12;193:49;7:242;;16:31;36:4;31:9;;7:242;;282:62:1;;;446:7;438:16;;;;;;491:1;464:12;:24;477:10;464:24;;;;;;;;;;;;;;;:28;;;;177:322;;:::o",
   "source": "// From https://github.com/sigp/solidity-security-blog\n// Re-Entrancy\n\npragma solidity ^0.5.0;\n\ncontract EtherStore {\n    mapping(address => uint256) private userBalances;\n\n    function withdrawBalance() public {\n        uint256 amountToWithdraw = userBalances[msg.sender];\n        (bool success, ) = msg.sender.call.value(amountToWithdraw)(\"\"); // At this point, the caller's code is executed, and can call withdrawBalance again\n        require(success);\n        userBalances[msg.sender] = 0;\n    }\n}\n",
   "sourcePath": "/Users/veronicazheng/src/smart-contracts-testing/contracts/reentrancy/EtherStore.sol",
   "ast": {
@@ -159,7 +160,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 642,
+                        "referencedDeclaration": 645,
                         "src": "261:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -290,7 +291,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 642,
+                              "referencedDeclaration": 645,
                               "src": "301:3:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -335,8 +336,8 @@
                         "referencedDeclaration": null,
                         "src": "301:21:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_setvalue_nonpayable$_t_uint256_$returns$_t_function_barecall_payable$_t_bytes_memory_ptr_$returns$_t_bool_$_t_bytes_memory_ptr_$value_$",
-                          "typeString": "function (uint256) returns (function (bytes memory) payable returns (bool,bytes memory))"
+                          "typeIdentifier": "t_function_setvalue_pure$_t_uint256_$returns$_t_function_barecall_payable$_t_bytes_memory_ptr_$returns$_t_bool_$_t_bytes_memory_ptr_$value_$",
+                          "typeString": "function (uint256) pure returns (function (bytes memory) payable returns (bool,bytes memory))"
                         }
                       },
                       "id": 79,
@@ -399,10 +400,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        645,
-                        646
+                        648,
+                        649
                       ],
-                      "referencedDeclaration": 645,
+                      "referencedDeclaration": 648,
                       "src": "438:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -459,7 +460,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 642,
+                          "referencedDeclaration": 645,
                           "src": "477:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -697,7 +698,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 642,
+                        "referencedDeclaration": 645,
                         "src": "261:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -828,7 +829,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 642,
+                              "referencedDeclaration": 645,
                               "src": "301:3:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -873,8 +874,8 @@
                         "referencedDeclaration": null,
                         "src": "301:21:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_setvalue_nonpayable$_t_uint256_$returns$_t_function_barecall_payable$_t_bytes_memory_ptr_$returns$_t_bool_$_t_bytes_memory_ptr_$value_$",
-                          "typeString": "function (uint256) returns (function (bytes memory) payable returns (bool,bytes memory))"
+                          "typeIdentifier": "t_function_setvalue_pure$_t_uint256_$returns$_t_function_barecall_payable$_t_bytes_memory_ptr_$returns$_t_bool_$_t_bytes_memory_ptr_$value_$",
+                          "typeString": "function (uint256) pure returns (function (bytes memory) payable returns (bool,bytes memory))"
                         }
                       },
                       "id": 79,
@@ -937,10 +938,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        645,
-                        646
+                        648,
+                        649
                       ],
-                      "referencedDeclaration": 645,
+                      "referencedDeclaration": 648,
                       "src": "438:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -997,7 +998,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 642,
+                          "referencedDeclaration": 645,
                           "src": "477:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1095,11 +1096,11 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+    "version": "0.5.12+commit.7709ece9.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.1",
-  "updatedAt": "2019-11-24T21:13:00.264Z",
+  "schemaVersion": "3.0.19",
+  "updatedAt": "2019-11-24T22:49:53.701Z",
   "devdoc": {
     "methods": {}
   },
