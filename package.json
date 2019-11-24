@@ -1,0 +1,32 @@
+{
+  "name": "smart-contracts-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^2.4.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "prettier-plugin-solidity": "^1.0.0-alpha.34"
+  },
+  "scripts": {
+    "prettier": "prettier --write contracts/**/*.sol",
+    "lint": "solhint --max-warnings 0 \"contracts/**/*.sol\"",
+    "compile": "truffle compile",
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veronicaz41/smart-contracts-testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veronicaz41/smart-contracts-testing/issues"
+  },
+  "homepage": "https://github.com/veronicaz41/smart-contracts-testing#readme"
+}
