@@ -5,7 +5,7 @@ pragma solidity ^0.5.0;
 import "./ConvertLib.sol";
 
 contract MetaCoin {
-    mapping(address => uint256) private balances;
+    mapping(address => uint256) public balances;
 
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
 
@@ -22,7 +22,6 @@ contract MetaCoin {
             "SendCoin: amount exceeds account balance"
         );
         balances[msg.sender] -= amount;
-        // overflow
         balances[receiver] += amount;
         emit Transfer(msg.sender, receiver, amount);
         return true;

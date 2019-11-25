@@ -288,7 +288,7 @@
                             "name": "tx",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 749,
+                            "referencedDeclaration": 784,
                             "src": "388:2:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_transaction",
@@ -342,10 +342,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        740,
-                        741
+                        775,
+                        776
                       ],
-                      "referencedDeclaration": 740,
+                      "referencedDeclaration": 775,
                       "src": "380:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -385,7 +385,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 771,
+                              "referencedDeclaration": 806,
                               "src": "445:4:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_Phishable_$342",
@@ -1144,7 +1144,7 @@
                             "name": "tx",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 749,
+                            "referencedDeclaration": 784,
                             "src": "388:2:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_transaction",
@@ -1198,10 +1198,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        740,
-                        741
+                        775,
+                        776
                       ],
-                      "referencedDeclaration": 740,
+                      "referencedDeclaration": 775,
                       "src": "380:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1241,7 +1241,7 @@
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 771,
+                              "referencedDeclaration": 806,
                               "src": "445:4:8",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_Phishable_$342",
@@ -1774,7 +1774,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.19",
-  "updatedAt": "2019-11-25T07:56:38.991Z",
+  "updatedAt": "2019-11-25T08:56:43.854Z",
   "devdoc": {
     "methods": {}
   },

@@ -70,7 +70,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 737,
+                          "referencedDeclaration": 772,
                           "src": "233:3:6",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -103,7 +103,7 @@
                       "name": "selfdestruct",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 745,
+                      "referencedDeclaration": 780,
                       "src": "220:12:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_payable_$returns$__$",
@@ -214,7 +214,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 737,
+                          "referencedDeclaration": 772,
                           "src": "233:3:6",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -247,7 +247,7 @@
                       "name": "selfdestruct",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 745,
+                      "referencedDeclaration": 780,
                       "src": "220:12:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_payable_$returns$__$",
@@ -312,7 +312,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.19",
-  "updatedAt": "2019-11-25T07:56:38.988Z",
+  "updatedAt": "2019-11-25T08:56:43.850Z",
   "devdoc": {
     "methods": {}
   },

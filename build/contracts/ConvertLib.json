@@ -28,12 +28,12 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"conversionRate\",\"type\":\"uint256\"}],\"name\":\"convert\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"convertedAmount\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/truffle-examples/ConvertLib.sol\":\"ConvertLib\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/truffle-examples/ConvertLib.sol\":{\"keccak256\":\"0x676ac790b775971c752b99ac2b19a238338d7af0d8ca1ab120d2ceae958c4efa\",\"urls\":[\"bzz-raw://a07f139dcc264e6f98ae800288c3a5b07e4587ee3458eef66308dbec17242436\",\"dweb:/ipfs/QmT3STkuzaTh892TvARR7dUYo1CuBKGvdpxwQ5RWKTEer6\"]}},\"version\":1}",
-  "bytecode": "0x60c3610025600b82828239805160001a60731461001857fe5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361060335760003560e01c806396e4ee3d146038575b600080fd5b606b60048036036040811015604c57600080fd5b8101908080359060200190929190803590602001909291905050506081565b6040518082815260200191505060405180910390f35b600081830290509291505056fea265627a7a723158202d2ba805c940ea2dcdf998f5d25b221c217ba26f7f9352a6b89339e2462f00dd64736f6c634300050c0032",
-  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361060335760003560e01c806396e4ee3d146038575b600080fd5b606b60048036036040811015604c57600080fd5b8101908080359060200190929190803590602001909291905050506081565b6040518082815260200191505060405180910390f35b600081830290509291505056fea265627a7a723158202d2ba805c940ea2dcdf998f5d25b221c217ba26f7f9352a6b89339e2462f00dd64736f6c634300050c0032",
-  "sourceMap": "78:205:10:-;;132:2:-1;166:7;155:9;146:7;137:37;255:7;249:14;246:1;241:23;235:4;232:33;222:2;;269:9;222:2;293:9;290:1;283:20;323:4;314:7;306:22;347:7;338;331:24",
-  "deployedSourceMap": "78:205:10:-;;;;;;;;;;;;;;;;;;;;;;;;103:178;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;103:178:10;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;205:23;260:14;251:6;:23;244:30;;103:178;;;;:::o",
-  "source": "// From https://github.com/truffle-box/metacoin-box\n\npragma solidity ^0.5.0;\n\nlibrary ConvertLib {\n    function convert(uint256 amount, uint256 conversionRate)\n        public\n        pure\n        returns (uint256 convertedAmount)\n    {\n        return amount * conversionRate;\n    }\n}\n",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"conversionRate\",\"type\":\"uint256\"}],\"name\":\"convert\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"convertedAmount\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/truffle-examples/ConvertLib.sol\":\"ConvertLib\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/truffle-examples/ConvertLib.sol\":{\"keccak256\":\"0xaa4b4ec02d71db03668e8d05951bf58fc535c5ae7f70cae1306d7c049a87123b\",\"urls\":[\"bzz-raw://cc94ead69840c3e4bee643ab7d4eca0511e25ef39bb8b262f4e17d5aa535f39a\",\"dweb:/ipfs/QmTU62jmdKCoN95Ddot4qjABM1BKyP2osRJtormVb7vP8t\"]}},\"version\":1}",
+  "bytecode": "0x60c3610025600b82828239805160001a60731461001857fe5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361060335760003560e01c806396e4ee3d146038575b600080fd5b606b60048036036040811015604c57600080fd5b8101908080359060200190929190803590602001909291905050506081565b6040518082815260200191505060405180910390f35b600081830290509291505056fea265627a7a7231582000f6c2e0c3eb7e22d5cbb2688d4c7a669970f5355698b916a336157950d1e2ab64736f6c634300050c0032",
+  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361060335760003560e01c806396e4ee3d146038575b600080fd5b606b60048036036040811015604c57600080fd5b8101908080359060200190929190803590602001909291905050506081565b6040518082815260200191505060405180910390f35b600081830290509291505056fea265627a7a7231582000f6c2e0c3eb7e22d5cbb2688d4c7a669970f5355698b916a336157950d1e2ab64736f6c634300050c0032",
+  "sourceMap": "90:225:10:-;;132:2:-1;166:7;155:9;146:7;137:37;255:7;249:14;246:1;241:23;235:4;232:33;222:2;;269:9;222:2;293:9;290:1;283:20;323:4;314:7;306:22;347:7;338;331:24",
+  "deployedSourceMap": "90:225:10:-;;;;;;;;;;;;;;;;;;;;;;;;115:198;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;115:198:10;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;217:23;292:14;283:6;:23;276:30;;115:198;;;;:::o",
+  "source": "// From https://github.com/truffle-box/metacoin-box\n// Overflow\n\npragma solidity ^0.5.0;\n\nlibrary ConvertLib {\n    function convert(uint256 amount, uint256 conversionRate)\n        public\n        pure\n        returns (uint256 convertedAmount)\n    {\n        // overflow\n        return amount * conversionRate;\n    }\n}\n",
   "sourcePath": "/Users/veronicazheng/src/smart-contracts-testing/contracts/truffle-examples/ConvertLib.sol",
   "ast": {
     "absolutePath": "/Users/veronicazheng/src/smart-contracts-testing/contracts/truffle-examples/ConvertLib.sol",
@@ -54,7 +54,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "53:23:10"
+        "src": "65:23:10"
       },
       {
         "baseContracts": [],
@@ -73,7 +73,7 @@
             "body": {
               "id": 436,
               "nodeType": "Block",
-              "src": "234:47:10",
+              "src": "246:67:10",
               "statements": [
                 {
                   "expression": {
@@ -94,7 +94,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 425,
-                      "src": "251:6:10",
+                      "src": "283:6:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -109,13 +109,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 427,
-                      "src": "260:14:10",
+                      "src": "292:14:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "251:23:10",
+                    "src": "283:23:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -124,7 +124,7 @@
                   "functionReturnParameters": 431,
                   "id": 435,
                   "nodeType": "Return",
-                  "src": "244:30:10"
+                  "src": "276:30:10"
                 }
               ]
             },
@@ -145,7 +145,7 @@
                   "name": "amount",
                   "nodeType": "VariableDeclaration",
                   "scope": 437,
-                  "src": "120:14:10",
+                  "src": "132:14:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -156,7 +156,7 @@
                     "id": 424,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "120:7:10",
+                    "src": "132:7:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -171,7 +171,7 @@
                   "name": "conversionRate",
                   "nodeType": "VariableDeclaration",
                   "scope": 437,
-                  "src": "136:22:10",
+                  "src": "148:22:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -182,7 +182,7 @@
                     "id": 426,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "136:7:10",
+                    "src": "148:7:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -192,7 +192,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "119:40:10"
+              "src": "131:40:10"
             },
             "returnParameters": {
               "id": 431,
@@ -204,7 +204,7 @@
                   "name": "convertedAmount",
                   "nodeType": "VariableDeclaration",
                   "scope": 437,
-                  "src": "205:23:10",
+                  "src": "217:23:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -215,7 +215,7 @@
                     "id": 429,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "205:7:10",
+                    "src": "217:7:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -225,20 +225,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "204:25:10"
+              "src": "216:25:10"
             },
             "scope": 438,
-            "src": "103:178:10",
+            "src": "115:198:10",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 439,
-        "src": "78:205:10"
+        "src": "90:225:10"
       }
     ],
-    "src": "53:231:10"
+    "src": "65:251:10"
   },
   "legacyAST": {
     "absolutePath": "/Users/veronicazheng/src/smart-contracts-testing/contracts/truffle-examples/ConvertLib.sol",
@@ -259,7 +259,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "53:23:10"
+        "src": "65:23:10"
       },
       {
         "baseContracts": [],
@@ -278,7 +278,7 @@
             "body": {
               "id": 436,
               "nodeType": "Block",
-              "src": "234:47:10",
+              "src": "246:67:10",
               "statements": [
                 {
                   "expression": {
@@ -299,7 +299,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 425,
-                      "src": "251:6:10",
+                      "src": "283:6:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -314,13 +314,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 427,
-                      "src": "260:14:10",
+                      "src": "292:14:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "251:23:10",
+                    "src": "283:23:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -329,7 +329,7 @@
                   "functionReturnParameters": 431,
                   "id": 435,
                   "nodeType": "Return",
-                  "src": "244:30:10"
+                  "src": "276:30:10"
                 }
               ]
             },
@@ -350,7 +350,7 @@
                   "name": "amount",
                   "nodeType": "VariableDeclaration",
                   "scope": 437,
-                  "src": "120:14:10",
+                  "src": "132:14:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -361,7 +361,7 @@
                     "id": 424,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "120:7:10",
+                    "src": "132:7:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -376,7 +376,7 @@
                   "name": "conversionRate",
                   "nodeType": "VariableDeclaration",
                   "scope": 437,
-                  "src": "136:22:10",
+                  "src": "148:22:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -387,7 +387,7 @@
                     "id": 426,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "136:7:10",
+                    "src": "148:7:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -397,7 +397,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "119:40:10"
+              "src": "131:40:10"
             },
             "returnParameters": {
               "id": 431,
@@ -409,7 +409,7 @@
                   "name": "convertedAmount",
                   "nodeType": "VariableDeclaration",
                   "scope": 437,
-                  "src": "205:23:10",
+                  "src": "217:23:10",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -420,7 +420,7 @@
                     "id": 429,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "205:7:10",
+                    "src": "217:7:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -430,20 +430,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "204:25:10"
+              "src": "216:25:10"
             },
             "scope": 438,
-            "src": "103:178:10",
+            "src": "115:198:10",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 439,
-        "src": "78:205:10"
+        "src": "90:225:10"
       }
     ],
-    "src": "53:231:10"
+    "src": "65:251:10"
   },
   "compiler": {
     "name": "solc",
@@ -470,7 +470,7 @@
     }
   },
   "schemaVersion": "3.0.19",
-  "updatedAt": "2019-11-25T07:56:38.993Z",
+  "updatedAt": "2019-11-25T08:56:43.856Z",
   "devdoc": {
     "methods": {}
   },

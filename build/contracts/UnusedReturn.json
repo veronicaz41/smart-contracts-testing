@@ -26,7 +26,7 @@
   "bytecode": "0x608060405234801561001057600080fd5b5061013d806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c806388e5387114610030575b600080fd5b6100666004803603604081101561004657600080fd5b810190808035906020019092919080359060200190929190505050610068565b005b61007b818361008090919063ffffffff16565b505050565b6000808284019050838110156100fe576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601b8152602001807f536166654d6174683a206164646974696f6e206f766572666c6f77000000000081525060200191505060405180910390fd5b809150509291505056fea265627a7a72315820dee8b0595494e8669d3c8d7ced6f5a30a32c0ca0f6dd0584674989c80eeac31264736f6c634300050c0032",
   "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c806388e5387114610030575b600080fd5b6100666004803603604081101561004657600080fd5b810190808035906020019092919080359060200190929190505050610068565b005b61007b818361008090919063ffffffff16565b505050565b6000808284019050838110156100fe576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601b8152602001807f536166654d6174683a206164646974696f6e206f766572666c6f77000000000081525060200191505060405180910390fd5b809150509291505056fea265627a7a72315820dee8b0595494e8669d3c8d7ced6f5a30a32c0ca0f6dd0584674989c80eeac31264736f6c634300050c0032",
   "sourceMap": "166:164:7:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;166:164:7;;;;;;;",
-  "deployedSourceMap": "166:164:7:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;166:164:7;;;;;;;;;;;;;;;;;;;227:101;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;227:101:7;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;313:8;319:1;313;:5;;:8;;;;:::i;:::-;;227:101;;:::o;834:176:12:-;892:7;911:9;927:1;923;:5;911:17;;951:1;946;:6;;938:46;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1002:1;995:8;;;834:176;;;;:::o",
+  "deployedSourceMap": "166:164:7:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;166:164:7;;;;;;;;;;;;;;;;;;;227:101;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;227:101:7;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;313:8;319:1;313;:5;;:8;;;;:::i;:::-;;227:101;;:::o;834:176:13:-;892:7;911:9;927:1;923;:5;911:17;;951:1;946;:6;;938:46;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1002:1;995:8;;;834:176;;;;:::o",
   "source": "// From https://github.com/crytic/slither/wiki/Detector-Documentation\n// Unused return\n\npragma solidity ^0.5.0;\n\nimport \"@openzeppelin/contracts/math/SafeMath.sol\";\n\ncontract UnusedReturn {\n    using SafeMath for uint256;\n\n    function my_func(uint256 a, uint256 b) public pure {\n        // return unused\n        a.add(b);\n    }\n}\n",
   "sourcePath": "/Users/veronicazheng/src/smart-contracts-testing/contracts/slither-examples/UnusedReturn.sol",
   "ast": {
@@ -56,7 +56,7 @@
         "id": 283,
         "nodeType": "ImportDirective",
         "scope": 302,
-        "sourceUnit": 723,
+        "sourceUnit": 758,
         "src": "113:51:7",
         "symbolAliases": [],
         "unitAlias": ""
@@ -81,10 +81,10 @@
               "id": 284,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 722,
+              "referencedDeclaration": 757,
               "src": "200:8:7",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$722",
+                "typeIdentifier": "t_contract$_SafeMath_$757",
                 "typeString": "library SafeMath"
               }
             },
@@ -152,7 +152,7 @@
                       "lValueRequested": false,
                       "memberName": "add",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 562,
+                      "referencedDeclaration": 597,
                       "src": "313:5:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -291,7 +291,7 @@
         "id": 283,
         "nodeType": "ImportDirective",
         "scope": 302,
-        "sourceUnit": 723,
+        "sourceUnit": 758,
         "src": "113:51:7",
         "symbolAliases": [],
         "unitAlias": ""
@@ -316,10 +316,10 @@
               "id": 284,
               "name": "SafeMath",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 722,
+              "referencedDeclaration": 757,
               "src": "200:8:7",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SafeMath_$722",
+                "typeIdentifier": "t_contract$_SafeMath_$757",
                 "typeString": "library SafeMath"
               }
             },
@@ -387,7 +387,7 @@
                       "lValueRequested": false,
                       "memberName": "add",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 562,
+                      "referencedDeclaration": 597,
                       "src": "313:5:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
@@ -505,7 +505,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.19",
-  "updatedAt": "2019-11-25T07:56:38.989Z",
+  "updatedAt": "2019-11-25T08:56:43.851Z",
   "devdoc": {
     "methods": {}
   },

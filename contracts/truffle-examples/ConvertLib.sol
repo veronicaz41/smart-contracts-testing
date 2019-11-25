@@ -1,4 +1,5 @@
 // From https://github.com/truffle-box/metacoin-box
+// Overflow
 
 pragma solidity ^0.5.0;
 
@@ -8,6 +9,7 @@ library ConvertLib {
         pure
         returns (uint256 convertedAmount)
     {
+        // overflow
         return amount * conversionRate;
     }
 }
