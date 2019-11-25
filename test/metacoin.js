@@ -65,5 +65,58 @@ contract("MetaCoin", accounts => {
     );
   });
 
-  // Should emit event, let's add this
+  // Test require() revert
+  // can use @openzeppelin/test-helpers expectRevert
+  it("should revert when sendCoin amount exceeds account balance", async () => {
+    const metaCoinInstance = await MetaCoin.deployed();
+
+    // Setup 2 accounts.
+    const accountOne = accounts[0];
+    const accountTwo = accounts[1];
+
+    // Make transaction from first account to second.
+    // 20000 > 10000 (accountOne balance)
+    const amount = 20000;
+    try {
+      await metaCoinInstance.sendCoin(accountTwo, amount, {
+        from: accountOne
+      });
+    } catch (error) {
+      // error.message
+      // Returned error: VM Exception while processing transaction: revert SendCoin: amount exceeds account balance -- Reason given: SendCoin: amount exceeds account balance.
+      assert.match(
+        error.message,
+        /Returned error: VM Exception while processing transaction: (revert )?/,
+        "Wrong kind of exception received"
+      );
+      const actualError = error.message.replace(
+        /Returned error: VM Exception while processing transaction: (revert .*) -- Reason given: /,
+        ""
+      );
+      expect(actualError).to.equal(
+        "SendCoin: amount exceeds account balance.",
+        "Exception reason given is wrong"
+      );
+      return;
+    }
+  });
+
+  // Test events
+  // can use @openzeppelin/test-helpers expectEvent
+  it("should emit Transfer event", async () => {
+    const metaCoinInstance = await MetaCoin.deployed();
+
+    // Setup 2 accounts.
+    const accountOne = accounts[0];
+    const accountTwo = accounts[1];
+
+    // Make transaction from first account to second.
+    const amount = 10;
+    let tx = await metaCoinInstance.sendCoin(accountTwo, amount, {
+      from: accountOne
+    });
+
+    // Checking event
+    assert.equal(tx.logs[0].event, "Transfer", "Expected Transfer event");
+  });
 });

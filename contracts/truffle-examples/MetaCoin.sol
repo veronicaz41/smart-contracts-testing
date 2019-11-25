@@ -17,8 +17,12 @@ contract MetaCoin {
         public
         returns (bool sufficient)
     {
-        if (balances[msg.sender] < amount) return false;
+        require(
+            balances[msg.sender] >= amount,
+            "SendCoin: amount exceeds account balance"
+        );
         balances[msg.sender] -= amount;
+        // overflow?
         balances[receiver] += amount;
         emit Transfer(msg.sender, receiver, amount);
         return true;
