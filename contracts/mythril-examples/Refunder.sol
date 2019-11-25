@@ -18,6 +18,7 @@ contract Refunder {
 
     // bad
     // Favor pull over push for external calls
+    // May also exceed gas limit
     function refundAll() public {
         for (uint256 x; x < refundAddresses.length; x++) {
             // arbitrary length iteration based on how many addresses participated
