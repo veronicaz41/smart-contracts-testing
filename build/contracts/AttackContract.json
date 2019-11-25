@@ -35,17 +35,17 @@
     "absolutePath": "/Users/veronicazheng/src/smart-contracts-testing/contracts/solhint-examples/Phishable.sol",
     "exportedSymbols": {
       "AttackContract": [
-        373
+        377
       ],
       "Phishable": [
-        342
+        346
       ]
     },
-    "id": 374,
+    "id": 378,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 303,
+        "id": 307,
         "literals": [
           "solidity",
           "^",
@@ -61,19 +61,19 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 342,
+        "id": 346,
         "linearizedBaseContracts": [
-          342
+          346
         ],
         "name": "Phishable",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 305,
+            "id": 309,
             "name": "owner",
             "nodeType": "VariableDeclaration",
-            "scope": 342,
+            "scope": 346,
             "src": "134:20:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -82,7 +82,7 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 304,
+              "id": 308,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "134:7:8",
@@ -97,25 +97,25 @@
           },
           {
             "body": {
-              "id": 314,
+              "id": 318,
               "nodeType": "Block",
               "src": "196:31:8",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 312,
+                    "id": 316,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 310,
+                      "id": 314,
                       "name": "owner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 305,
+                      "referencedDeclaration": 309,
                       "src": "206:5:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -126,11 +126,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 311,
+                      "id": 315,
                       "name": "_owner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 307,
+                      "referencedDeclaration": 311,
                       "src": "214:6:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -143,29 +143,29 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 313,
+                  "id": 317,
                   "nodeType": "ExpressionStatement",
                   "src": "206:14:8"
                 }
               ]
             },
             "documentation": null,
-            "id": 315,
+            "id": 319,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 308,
+              "id": 312,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 307,
+                  "id": 311,
                   "name": "_owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 315,
+                  "scope": 319,
                   "src": "173:14:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -174,7 +174,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 306,
+                    "id": 310,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "173:7:8",
@@ -191,12 +191,12 @@
               "src": "172:16:8"
             },
             "returnParameters": {
-              "id": 309,
+              "id": 313,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "196:0:8"
             },
-            "scope": 342,
+            "scope": 346,
             "src": "161:66:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -204,31 +204,31 @@
           },
           {
             "body": {
-              "id": 318,
+              "id": 322,
               "nodeType": "Block",
               "src": "261:2:8",
               "statements": []
             },
             "documentation": null,
-            "id": 319,
+            "id": 323,
             "implemented": true,
             "kind": "fallback",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 316,
+              "id": 320,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "241:2:8"
             },
             "returnParameters": {
-              "id": 317,
+              "id": 321,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "261:0:8"
             },
-            "scope": 342,
+            "scope": 346,
             "src": "233:30:8",
             "stateMutability": "payable",
             "superFunction": null,
@@ -236,7 +236,7 @@
           },
           {
             "body": {
-              "id": 340,
+              "id": 344,
               "nodeType": "Block",
               "src": "344:122:8",
               "statements": [
@@ -250,7 +250,7 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 328,
+                        "id": 332,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -259,18 +259,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 325,
+                            "id": 329,
                             "name": "tx",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 784,
+                            "referencedDeclaration": 788,
                             "src": "388:2:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_transaction",
                               "typeString": "tx"
                             }
                           },
-                          "id": 326,
+                          "id": 330,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -288,11 +288,11 @@
                         "operator": "==",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 327,
+                          "id": 331,
                           "name": "owner",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 305,
+                          "referencedDeclaration": 309,
                           "src": "401:5:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -313,21 +313,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 324,
+                      "id": 328,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        775,
-                        776
+                        779,
+                        780
                       ],
-                      "referencedDeclaration": 775,
+                      "referencedDeclaration": 779,
                       "src": "380:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 329,
+                    "id": 333,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -341,7 +341,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 330,
+                  "id": 334,
                   "nodeType": "ExpressionStatement",
                   "src": "380:27:8"
                 },
@@ -356,14 +356,14 @@
                           "arguments": [
                             {
                               "argumentTypes": null,
-                              "id": 335,
+                              "id": 339,
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 806,
+                              "referencedDeclaration": 810,
                               "src": "445:4:8",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_Phishable_$342",
+                                "typeIdentifier": "t_contract$_Phishable_$346",
                                 "typeString": "contract Phishable"
                               }
                             }
@@ -371,11 +371,11 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_Phishable_$342",
+                                "typeIdentifier": "t_contract$_Phishable_$346",
                                 "typeString": "contract Phishable"
                               }
                             ],
-                            "id": 334,
+                            "id": 338,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -388,7 +388,7 @@
                             },
                             "typeName": "address"
                           },
-                          "id": 336,
+                          "id": 340,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -402,7 +402,7 @@
                             "typeString": "address payable"
                           }
                         },
-                        "id": 337,
+                        "id": 341,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -426,18 +426,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 331,
+                        "id": 335,
                         "name": "_recipient",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 321,
+                        "referencedDeclaration": 325,
                         "src": "417:10:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
                         }
                       },
-                      "id": 333,
+                      "id": 337,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -451,7 +451,7 @@
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 338,
+                    "id": 342,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -465,29 +465,29 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 339,
+                  "id": 343,
                   "nodeType": "ExpressionStatement",
                   "src": "417:42:8"
                 }
               ]
             },
             "documentation": null,
-            "id": 341,
+            "id": 345,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "withdrawAll",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 322,
+              "id": 326,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 321,
+                  "id": 325,
                   "name": "_recipient",
                   "nodeType": "VariableDeclaration",
-                  "scope": 341,
+                  "scope": 345,
                   "src": "307:26:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -496,7 +496,7 @@
                     "typeString": "address payable"
                   },
                   "typeName": {
-                    "id": 320,
+                    "id": 324,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "307:15:8",
@@ -513,19 +513,19 @@
               "src": "306:28:8"
             },
             "returnParameters": {
-              "id": 323,
+              "id": 327,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "344:0:8"
             },
-            "scope": 342,
+            "scope": 346,
             "src": "286:180:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 374,
+        "scope": 378,
         "src": "109:359:8"
       },
       {
@@ -534,35 +534,35 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 373,
+        "id": 377,
         "linearizedBaseContracts": [
-          373
+          377
         ],
         "name": "AttackContract",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 344,
+            "id": 348,
             "name": "phishableContract",
             "nodeType": "VariableDeclaration",
-            "scope": 373,
+            "scope": 377,
             "src": "500:27:8",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_Phishable_$342",
+              "typeIdentifier": "t_contract$_Phishable_$346",
               "typeString": "contract Phishable"
             },
             "typeName": {
               "contractScope": null,
-              "id": 343,
+              "id": 347,
               "name": "Phishable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 342,
+              "referencedDeclaration": 346,
               "src": "500:9:8",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Phishable_$342",
+                "typeIdentifier": "t_contract$_Phishable_$346",
                 "typeString": "contract Phishable"
               }
             },
@@ -571,10 +571,10 @@
           },
           {
             "constant": false,
-            "id": 346,
+            "id": 350,
             "name": "attacker",
             "nodeType": "VariableDeclaration",
-            "scope": 373,
+            "scope": 377,
             "src": "533:24:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -583,7 +583,7 @@
               "typeString": "address payable"
             },
             "typeName": {
-              "id": 345,
+              "id": 349,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "533:15:8",
@@ -598,56 +598,10 @@
           },
           {
             "body": {
-              "id": 361,
+              "id": 365,
               "nodeType": "Block",
               "src": "702:92:8",
               "statements": [
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 355,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 353,
-                      "name": "phishableContract",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 344,
-                      "src": "712:17:8",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Phishable_$342",
-                        "typeString": "contract Phishable"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "id": 354,
-                      "name": "_phishableContract",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 348,
-                      "src": "732:18:8",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Phishable_$342",
-                        "typeString": "contract Phishable"
-                      }
-                    },
-                    "src": "712:38:8",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Phishable_$342",
-                      "typeString": "contract Phishable"
-                    }
-                  },
-                  "id": 356,
-                  "nodeType": "ExpressionStatement",
-                  "src": "712:38:8"
-                },
                 {
                   "expression": {
                     "argumentTypes": null,
@@ -659,10 +613,56 @@
                     "leftHandSide": {
                       "argumentTypes": null,
                       "id": 357,
+                      "name": "phishableContract",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 348,
+                      "src": "712:17:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Phishable_$346",
+                        "typeString": "contract Phishable"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 358,
+                      "name": "_phishableContract",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 352,
+                      "src": "732:18:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Phishable_$346",
+                        "typeString": "contract Phishable"
+                      }
+                    },
+                    "src": "712:38:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Phishable_$346",
+                      "typeString": "contract Phishable"
+                    }
+                  },
+                  "id": 360,
+                  "nodeType": "ExpressionStatement",
+                  "src": "712:38:8"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 363,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 361,
                       "name": "attacker",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 346,
+                      "referencedDeclaration": 350,
                       "src": "760:8:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address_payable",
@@ -673,11 +673,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 358,
+                      "id": 362,
                       "name": "_attackerAddress",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 350,
+                      "referencedDeclaration": 354,
                       "src": "771:16:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address_payable",
@@ -690,45 +690,45 @@
                       "typeString": "address payable"
                     }
                   },
-                  "id": 360,
+                  "id": 364,
                   "nodeType": "ExpressionStatement",
                   "src": "760:27:8"
                 }
               ]
             },
             "documentation": null,
-            "id": 362,
+            "id": 366,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 351,
+              "id": 355,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 348,
+                  "id": 352,
                   "name": "_phishableContract",
                   "nodeType": "VariableDeclaration",
-                  "scope": 362,
+                  "scope": 366,
                   "src": "619:28:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Phishable_$342",
+                    "typeIdentifier": "t_contract$_Phishable_$346",
                     "typeString": "contract Phishable"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 347,
+                    "id": 351,
                     "name": "Phishable",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 342,
+                    "referencedDeclaration": 346,
                     "src": "619:9:8",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Phishable_$342",
+                      "typeIdentifier": "t_contract$_Phishable_$346",
                       "typeString": "contract Phishable"
                     }
                   },
@@ -737,10 +737,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 350,
+                  "id": 354,
                   "name": "_attackerAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 362,
+                  "scope": 366,
                   "src": "649:32:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -749,7 +749,7 @@
                     "typeString": "address payable"
                   },
                   "typeName": {
-                    "id": 349,
+                    "id": 353,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "649:15:8",
@@ -766,12 +766,12 @@
               "src": "618:64:8"
             },
             "returnParameters": {
-              "id": 352,
+              "id": 356,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "702:0:8"
             },
-            "scope": 373,
+            "scope": 377,
             "src": "607:187:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -779,7 +779,7 @@
           },
           {
             "body": {
-              "id": 371,
+              "id": 375,
               "nodeType": "Block",
               "src": "828:56:8",
               "statements": [
@@ -789,11 +789,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 368,
+                        "id": 372,
                         "name": "attacker",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 346,
+                        "referencedDeclaration": 350,
                         "src": "868:8:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
@@ -810,32 +810,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 365,
+                        "id": 369,
                         "name": "phishableContract",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 344,
+                        "referencedDeclaration": 348,
                         "src": "838:17:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Phishable_$342",
+                          "typeIdentifier": "t_contract$_Phishable_$346",
                           "typeString": "contract Phishable"
                         }
                       },
-                      "id": 367,
+                      "id": 371,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "withdrawAll",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 341,
+                      "referencedDeclaration": 345,
                       "src": "838:29:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_payable_$returns$__$",
                         "typeString": "function (address payable) external"
                       }
                     },
-                    "id": 369,
+                    "id": 373,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -849,39 +849,39 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 370,
+                  "id": 374,
                   "nodeType": "ExpressionStatement",
                   "src": "838:39:8"
                 }
               ]
             },
             "documentation": null,
-            "id": 372,
+            "id": 376,
             "implemented": true,
             "kind": "fallback",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 363,
+              "id": 367,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "808:2:8"
             },
             "returnParameters": {
-              "id": 364,
+              "id": 368,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "828:0:8"
             },
-            "scope": 373,
+            "scope": 377,
             "src": "800:84:8",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 374,
+        "scope": 378,
         "src": "470:416:8"
       }
     ],
@@ -891,17 +891,17 @@
     "absolutePath": "/Users/veronicazheng/src/smart-contracts-testing/contracts/solhint-examples/Phishable.sol",
     "exportedSymbols": {
       "AttackContract": [
-        373
+        377
       ],
       "Phishable": [
-        342
+        346
       ]
     },
-    "id": 374,
+    "id": 378,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 303,
+        "id": 307,
         "literals": [
           "solidity",
           "^",
@@ -917,19 +917,19 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 342,
+        "id": 346,
         "linearizedBaseContracts": [
-          342
+          346
         ],
         "name": "Phishable",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 305,
+            "id": 309,
             "name": "owner",
             "nodeType": "VariableDeclaration",
-            "scope": 342,
+            "scope": 346,
             "src": "134:20:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -938,7 +938,7 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 304,
+              "id": 308,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "134:7:8",
@@ -953,25 +953,25 @@
           },
           {
             "body": {
-              "id": 314,
+              "id": 318,
               "nodeType": "Block",
               "src": "196:31:8",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 312,
+                    "id": 316,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 310,
+                      "id": 314,
                       "name": "owner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 305,
+                      "referencedDeclaration": 309,
                       "src": "206:5:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -982,11 +982,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 311,
+                      "id": 315,
                       "name": "_owner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 307,
+                      "referencedDeclaration": 311,
                       "src": "214:6:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -999,29 +999,29 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 313,
+                  "id": 317,
                   "nodeType": "ExpressionStatement",
                   "src": "206:14:8"
                 }
               ]
             },
             "documentation": null,
-            "id": 315,
+            "id": 319,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 308,
+              "id": 312,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 307,
+                  "id": 311,
                   "name": "_owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 315,
+                  "scope": 319,
                   "src": "173:14:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1030,7 +1030,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 306,
+                    "id": 310,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "173:7:8",
@@ -1047,12 +1047,12 @@
               "src": "172:16:8"
             },
             "returnParameters": {
-              "id": 309,
+              "id": 313,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "196:0:8"
             },
-            "scope": 342,
+            "scope": 346,
             "src": "161:66:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1060,31 +1060,31 @@
           },
           {
             "body": {
-              "id": 318,
+              "id": 322,
               "nodeType": "Block",
               "src": "261:2:8",
               "statements": []
             },
             "documentation": null,
-            "id": 319,
+            "id": 323,
             "implemented": true,
             "kind": "fallback",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 316,
+              "id": 320,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "241:2:8"
             },
             "returnParameters": {
-              "id": 317,
+              "id": 321,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "261:0:8"
             },
-            "scope": 342,
+            "scope": 346,
             "src": "233:30:8",
             "stateMutability": "payable",
             "superFunction": null,
@@ -1092,7 +1092,7 @@
           },
           {
             "body": {
-              "id": 340,
+              "id": 344,
               "nodeType": "Block",
               "src": "344:122:8",
               "statements": [
@@ -1106,7 +1106,7 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 328,
+                        "id": 332,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1115,18 +1115,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 325,
+                            "id": 329,
                             "name": "tx",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 784,
+                            "referencedDeclaration": 788,
                             "src": "388:2:8",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_transaction",
                               "typeString": "tx"
                             }
                           },
-                          "id": 326,
+                          "id": 330,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1144,11 +1144,11 @@
                         "operator": "==",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 327,
+                          "id": 331,
                           "name": "owner",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 305,
+                          "referencedDeclaration": 309,
                           "src": "401:5:8",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -1169,21 +1169,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 324,
+                      "id": 328,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        775,
-                        776
+                        779,
+                        780
                       ],
-                      "referencedDeclaration": 775,
+                      "referencedDeclaration": 779,
                       "src": "380:7:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 329,
+                    "id": 333,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1197,7 +1197,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 330,
+                  "id": 334,
                   "nodeType": "ExpressionStatement",
                   "src": "380:27:8"
                 },
@@ -1212,14 +1212,14 @@
                           "arguments": [
                             {
                               "argumentTypes": null,
-                              "id": 335,
+                              "id": 339,
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 806,
+                              "referencedDeclaration": 810,
                               "src": "445:4:8",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_Phishable_$342",
+                                "typeIdentifier": "t_contract$_Phishable_$346",
                                 "typeString": "contract Phishable"
                               }
                             }
@@ -1227,11 +1227,11 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_Phishable_$342",
+                                "typeIdentifier": "t_contract$_Phishable_$346",
                                 "typeString": "contract Phishable"
                               }
                             ],
-                            "id": 334,
+                            "id": 338,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1244,7 +1244,7 @@
                             },
                             "typeName": "address"
                           },
-                          "id": 336,
+                          "id": 340,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1258,7 +1258,7 @@
                             "typeString": "address payable"
                           }
                         },
-                        "id": 337,
+                        "id": 341,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1282,18 +1282,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 331,
+                        "id": 335,
                         "name": "_recipient",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 321,
+                        "referencedDeclaration": 325,
                         "src": "417:10:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
                         }
                       },
-                      "id": 333,
+                      "id": 337,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1307,7 +1307,7 @@
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 338,
+                    "id": 342,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1321,29 +1321,29 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 339,
+                  "id": 343,
                   "nodeType": "ExpressionStatement",
                   "src": "417:42:8"
                 }
               ]
             },
             "documentation": null,
-            "id": 341,
+            "id": 345,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "withdrawAll",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 322,
+              "id": 326,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 321,
+                  "id": 325,
                   "name": "_recipient",
                   "nodeType": "VariableDeclaration",
-                  "scope": 341,
+                  "scope": 345,
                   "src": "307:26:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1352,7 +1352,7 @@
                     "typeString": "address payable"
                   },
                   "typeName": {
-                    "id": 320,
+                    "id": 324,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "307:15:8",
@@ -1369,19 +1369,19 @@
               "src": "306:28:8"
             },
             "returnParameters": {
-              "id": 323,
+              "id": 327,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "344:0:8"
             },
-            "scope": 342,
+            "scope": 346,
             "src": "286:180:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 374,
+        "scope": 378,
         "src": "109:359:8"
       },
       {
@@ -1390,35 +1390,35 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 373,
+        "id": 377,
         "linearizedBaseContracts": [
-          373
+          377
         ],
         "name": "AttackContract",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 344,
+            "id": 348,
             "name": "phishableContract",
             "nodeType": "VariableDeclaration",
-            "scope": 373,
+            "scope": 377,
             "src": "500:27:8",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_Phishable_$342",
+              "typeIdentifier": "t_contract$_Phishable_$346",
               "typeString": "contract Phishable"
             },
             "typeName": {
               "contractScope": null,
-              "id": 343,
+              "id": 347,
               "name": "Phishable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 342,
+              "referencedDeclaration": 346,
               "src": "500:9:8",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Phishable_$342",
+                "typeIdentifier": "t_contract$_Phishable_$346",
                 "typeString": "contract Phishable"
               }
             },
@@ -1427,10 +1427,10 @@
           },
           {
             "constant": false,
-            "id": 346,
+            "id": 350,
             "name": "attacker",
             "nodeType": "VariableDeclaration",
-            "scope": 373,
+            "scope": 377,
             "src": "533:24:8",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1439,7 +1439,7 @@
               "typeString": "address payable"
             },
             "typeName": {
-              "id": 345,
+              "id": 349,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "533:15:8",
@@ -1454,56 +1454,10 @@
           },
           {
             "body": {
-              "id": 361,
+              "id": 365,
               "nodeType": "Block",
               "src": "702:92:8",
               "statements": [
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 355,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "id": 353,
-                      "name": "phishableContract",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 344,
-                      "src": "712:17:8",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Phishable_$342",
-                        "typeString": "contract Phishable"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "id": 354,
-                      "name": "_phishableContract",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 348,
-                      "src": "732:18:8",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Phishable_$342",
-                        "typeString": "contract Phishable"
-                      }
-                    },
-                    "src": "712:38:8",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Phishable_$342",
-                      "typeString": "contract Phishable"
-                    }
-                  },
-                  "id": 356,
-                  "nodeType": "ExpressionStatement",
-                  "src": "712:38:8"
-                },
                 {
                   "expression": {
                     "argumentTypes": null,
@@ -1515,10 +1469,56 @@
                     "leftHandSide": {
                       "argumentTypes": null,
                       "id": 357,
+                      "name": "phishableContract",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 348,
+                      "src": "712:17:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Phishable_$346",
+                        "typeString": "contract Phishable"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 358,
+                      "name": "_phishableContract",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 352,
+                      "src": "732:18:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Phishable_$346",
+                        "typeString": "contract Phishable"
+                      }
+                    },
+                    "src": "712:38:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Phishable_$346",
+                      "typeString": "contract Phishable"
+                    }
+                  },
+                  "id": 360,
+                  "nodeType": "ExpressionStatement",
+                  "src": "712:38:8"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 363,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 361,
                       "name": "attacker",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 346,
+                      "referencedDeclaration": 350,
                       "src": "760:8:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address_payable",
@@ -1529,11 +1529,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 358,
+                      "id": 362,
                       "name": "_attackerAddress",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 350,
+                      "referencedDeclaration": 354,
                       "src": "771:16:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address_payable",
@@ -1546,45 +1546,45 @@
                       "typeString": "address payable"
                     }
                   },
-                  "id": 360,
+                  "id": 364,
                   "nodeType": "ExpressionStatement",
                   "src": "760:27:8"
                 }
               ]
             },
             "documentation": null,
-            "id": 362,
+            "id": 366,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 351,
+              "id": 355,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 348,
+                  "id": 352,
                   "name": "_phishableContract",
                   "nodeType": "VariableDeclaration",
-                  "scope": 362,
+                  "scope": 366,
                   "src": "619:28:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Phishable_$342",
+                    "typeIdentifier": "t_contract$_Phishable_$346",
                     "typeString": "contract Phishable"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 347,
+                    "id": 351,
                     "name": "Phishable",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 342,
+                    "referencedDeclaration": 346,
                     "src": "619:9:8",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Phishable_$342",
+                      "typeIdentifier": "t_contract$_Phishable_$346",
                       "typeString": "contract Phishable"
                     }
                   },
@@ -1593,10 +1593,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 350,
+                  "id": 354,
                   "name": "_attackerAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 362,
+                  "scope": 366,
                   "src": "649:32:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1605,7 +1605,7 @@
                     "typeString": "address payable"
                   },
                   "typeName": {
-                    "id": 349,
+                    "id": 353,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "649:15:8",
@@ -1622,12 +1622,12 @@
               "src": "618:64:8"
             },
             "returnParameters": {
-              "id": 352,
+              "id": 356,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "702:0:8"
             },
-            "scope": 373,
+            "scope": 377,
             "src": "607:187:8",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1635,7 +1635,7 @@
           },
           {
             "body": {
-              "id": 371,
+              "id": 375,
               "nodeType": "Block",
               "src": "828:56:8",
               "statements": [
@@ -1645,11 +1645,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 368,
+                        "id": 372,
                         "name": "attacker",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 346,
+                        "referencedDeclaration": 350,
                         "src": "868:8:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
@@ -1666,32 +1666,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 365,
+                        "id": 369,
                         "name": "phishableContract",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 344,
+                        "referencedDeclaration": 348,
                         "src": "838:17:8",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Phishable_$342",
+                          "typeIdentifier": "t_contract$_Phishable_$346",
                           "typeString": "contract Phishable"
                         }
                       },
-                      "id": 367,
+                      "id": 371,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "withdrawAll",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 341,
+                      "referencedDeclaration": 345,
                       "src": "838:29:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_payable_$returns$__$",
                         "typeString": "function (address payable) external"
                       }
                     },
-                    "id": 369,
+                    "id": 373,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1705,39 +1705,39 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 370,
+                  "id": 374,
                   "nodeType": "ExpressionStatement",
                   "src": "838:39:8"
                 }
               ]
             },
             "documentation": null,
-            "id": 372,
+            "id": 376,
             "implemented": true,
             "kind": "fallback",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 363,
+              "id": 367,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "808:2:8"
             },
             "returnParameters": {
-              "id": 364,
+              "id": 368,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "828:0:8"
             },
-            "scope": 373,
+            "scope": 377,
             "src": "800:84:8",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 374,
+        "scope": 378,
         "src": "470:416:8"
       }
     ],
@@ -1749,7 +1749,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.19",
-  "updatedAt": "2019-11-25T08:56:43.852Z",
+  "updatedAt": "2019-11-25T17:21:16.073Z",
   "devdoc": {
     "methods": {}
   },

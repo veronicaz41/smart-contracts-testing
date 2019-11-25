@@ -133,7 +133,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 772,
+                        "referencedDeclaration": 776,
                         "src": "376:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -329,10 +329,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        775,
-                        776
+                        779,
+                        780
                       ],
-                      "referencedDeclaration": 775,
+                      "referencedDeclaration": 779,
                       "src": "524:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -543,7 +543,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 772,
+                        "referencedDeclaration": 776,
                         "src": "376:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -739,10 +739,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        775,
-                        776
+                        779,
+                        780
                       ],
-                      "referencedDeclaration": 775,
+                      "referencedDeclaration": 779,
                       "src": "524:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -861,7 +861,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.19",
-  "updatedAt": "2019-11-25T08:56:43.845Z",
+  "updatedAt": "2019-11-25T17:21:16.057Z",
   "devdoc": {
     "methods": {}
   },
