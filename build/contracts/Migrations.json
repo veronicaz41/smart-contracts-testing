@@ -199,7 +199,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 645,
+                        "referencedDeclaration": 737,
                         "src": "162:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -283,7 +283,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 645,
+                        "referencedDeclaration": 737,
                         "src": "221:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -845,7 +845,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 645,
+                        "referencedDeclaration": 737,
                         "src": "162:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -929,7 +929,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 645,
+                        "referencedDeclaration": 737,
                         "src": "221:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -1371,9 +1371,22 @@
     "name": "solc",
     "version": "0.5.12+commit.7709ece9.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "1574666636118": {
+      "events": {},
+      "links": {},
+      "address": "0x181BD00F8397bfd7B9a0e0e710a703103A43ef81",
+      "transactionHash": "0x46021a38c5e9474baf20d894ee69d39c83655ed1ec4f5d42c2df856abee512bd"
+    },
+    "1574667931986": {
+      "events": {},
+      "links": {},
+      "address": "0x9a4C6494F34D17e177f59c5Fb478202a6ffE69B4",
+      "transactionHash": "0xe90ac7fccbb1d6c75588be914fcd638b1993a294c0ce8ea8a35fa2cfeea1e6d4"
+    }
+  },
   "schemaVersion": "3.0.19",
-  "updatedAt": "2019-11-24T22:49:53.698Z",
+  "updatedAt": "2019-11-25T07:56:38.977Z",
   "devdoc": {
     "methods": {}
   },

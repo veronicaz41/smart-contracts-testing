@@ -9,8 +9,8 @@ contract MetaCoin {
 
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
 
-    constructor(address owner) public {
-        balances[owner] = 10000;
+    constructor() public {
+        balances[tx.origin] = 10000;
     }
 
     function sendCoin(address receiver, uint256 amount)
@@ -22,7 +22,7 @@ contract MetaCoin {
             "SendCoin: amount exceeds account balance"
         );
         balances[msg.sender] -= amount;
-        // overflow?
+        // overflow
         balances[receiver] += amount;
         emit Transfer(msg.sender, receiver, amount);
         return true;

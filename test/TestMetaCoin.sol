@@ -20,13 +20,12 @@ contract TestMetaCoin {
     }
 
     function testInitialBalanceWithNewMetaCoin() public {
-        address owner = msg.sender;
-        MetaCoin meta = new MetaCoin(owner);
+        MetaCoin meta = new MetaCoin();
 
         uint256 expected = 10000;
 
         Assert.equal(
-            meta.getBalance(owner),
+            meta.getBalance(msg.sender),
             expected,
             "Owner should have 10000 MetaCoin initially"
         );

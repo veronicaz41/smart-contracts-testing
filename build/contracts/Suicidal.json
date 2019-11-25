@@ -14,22 +14,22 @@
   "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"kill\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/slither-examples/Suicidal.sol\":\"Suicidal\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/veronicazheng/src/smart-contracts-testing/contracts/slither-examples/Suicidal.sol\":{\"keccak256\":\"0x2bda956b86de3a579649c5f4e1eebd56afa0cfc006627bd13413d786886f0cbd\",\"urls\":[\"bzz-raw://b8951bf337697c3c6367f55bf9adaafdd585319046fd2e398bf9885490c4ab3b\",\"dweb:/ipfs/QmaTCTCCEJMYw6Rg2BsLe1vnmUxt6FrssMptbFMiPJcUbU\"]}},\"version\":1}",
   "bytecode": "0x6080604052348015600f57600080fd5b5060838061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806341c0e1b514602d575b600080fd5b60336035565b005b3373ffffffffffffffffffffffffffffffffffffffff16fffea265627a7a72315820e6ad9b3f199884a9558111843303900d5f477382cf34423f3668b1a90d37928364736f6c634300050c0032",
   "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806341c0e1b514602d575b600080fd5b60336035565b005b3373ffffffffffffffffffffffffffffffffffffffff16fffea265627a7a72315820e6ad9b3f199884a9558111843303900d5f477382cf34423f3668b1a90d37928364736f6c634300050c0032",
-  "sourceMap": "161:92:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;161:92:4;;;;;;;",
-  "deployedSourceMap": "161:92:4:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;161:92:4;;;;;;;;;;;;;;;;;;;185:66;;;:::i;:::-;;;233:10;220:24;;",
+  "sourceMap": "161:92:6:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;161:92:6;;;;;;;",
+  "deployedSourceMap": "161:92:6:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;161:92:6;;;;;;;;;;;;;;;;;;;185:66;;;:::i;:::-;;;233:10;220:24;;",
   "source": "// From https://github.com/crytic/slither/wiki/Detector-Documentation\n// Unprotected call to function executing selfdestruct / suicide\n\npragma solidity ^0.5.0;\n\ncontract Suicidal {\n    function kill() external {\n        selfdestruct(msg.sender);\n    }\n}\n",
   "sourcePath": "/Users/veronicazheng/src/smart-contracts-testing/contracts/slither-examples/Suicidal.sol",
   "ast": {
     "absolutePath": "/Users/veronicazheng/src/smart-contracts-testing/contracts/slither-examples/Suicidal.sol",
     "exportedSymbols": {
       "Suicidal": [
-        188
+        280
       ]
     },
-    "id": 189,
+    "id": 281,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 178,
+        "id": 270,
         "literals": [
           "solidity",
           "^",
@@ -37,7 +37,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "136:23:4"
+        "src": "136:23:6"
       },
       {
         "baseContracts": [],
@@ -45,18 +45,18 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 188,
+        "id": 280,
         "linearizedBaseContracts": [
-          188
+          280
         ],
         "name": "Suicidal",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 186,
+              "id": 278,
               "nodeType": "Block",
-              "src": "210:41:4",
+              "src": "210:41:6",
               "statements": [
                 {
                   "expression": {
@@ -66,18 +66,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 182,
+                          "id": 274,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 645,
-                          "src": "233:3:4",
+                          "referencedDeclaration": 737,
+                          "src": "233:3:6",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 183,
+                        "id": 275,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -85,7 +85,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "233:10:4",
+                        "src": "233:10:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -99,18 +99,18 @@
                           "typeString": "address payable"
                         }
                       ],
-                      "id": 181,
+                      "id": 273,
                       "name": "selfdestruct",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 653,
-                      "src": "220:12:4",
+                      "referencedDeclaration": 745,
+                      "src": "220:12:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_payable_$returns$__$",
                         "typeString": "function (address payable)"
                       }
                     },
-                    "id": 184,
+                    "id": 276,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -118,62 +118,62 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "220:24:4",
+                    "src": "220:24:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 185,
+                  "id": 277,
                   "nodeType": "ExpressionStatement",
-                  "src": "220:24:4"
+                  "src": "220:24:6"
                 }
               ]
             },
             "documentation": null,
-            "id": 187,
+            "id": 279,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "kill",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 179,
+              "id": 271,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "198:2:4"
+              "src": "198:2:6"
             },
             "returnParameters": {
-              "id": 180,
+              "id": 272,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "210:0:4"
+              "src": "210:0:6"
             },
-            "scope": 188,
-            "src": "185:66:4",
+            "scope": 280,
+            "src": "185:66:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 189,
-        "src": "161:92:4"
+        "scope": 281,
+        "src": "161:92:6"
       }
     ],
-    "src": "136:118:4"
+    "src": "136:118:6"
   },
   "legacyAST": {
     "absolutePath": "/Users/veronicazheng/src/smart-contracts-testing/contracts/slither-examples/Suicidal.sol",
     "exportedSymbols": {
       "Suicidal": [
-        188
+        280
       ]
     },
-    "id": 189,
+    "id": 281,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 178,
+        "id": 270,
         "literals": [
           "solidity",
           "^",
@@ -181,7 +181,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "136:23:4"
+        "src": "136:23:6"
       },
       {
         "baseContracts": [],
@@ -189,18 +189,18 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 188,
+        "id": 280,
         "linearizedBaseContracts": [
-          188
+          280
         ],
         "name": "Suicidal",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 186,
+              "id": 278,
               "nodeType": "Block",
-              "src": "210:41:4",
+              "src": "210:41:6",
               "statements": [
                 {
                   "expression": {
@@ -210,18 +210,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 182,
+                          "id": 274,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 645,
-                          "src": "233:3:4",
+                          "referencedDeclaration": 737,
+                          "src": "233:3:6",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 183,
+                        "id": 275,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -229,7 +229,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "233:10:4",
+                        "src": "233:10:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -243,18 +243,18 @@
                           "typeString": "address payable"
                         }
                       ],
-                      "id": 181,
+                      "id": 273,
                       "name": "selfdestruct",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 653,
-                      "src": "220:12:4",
+                      "referencedDeclaration": 745,
+                      "src": "220:12:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_payable_$returns$__$",
                         "typeString": "function (address payable)"
                       }
                     },
-                    "id": 184,
+                    "id": 276,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -262,49 +262,49 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "220:24:4",
+                    "src": "220:24:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 185,
+                  "id": 277,
                   "nodeType": "ExpressionStatement",
-                  "src": "220:24:4"
+                  "src": "220:24:6"
                 }
               ]
             },
             "documentation": null,
-            "id": 187,
+            "id": 279,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "kill",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 179,
+              "id": 271,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "198:2:4"
+              "src": "198:2:6"
             },
             "returnParameters": {
-              "id": 180,
+              "id": 272,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "210:0:4"
+              "src": "210:0:6"
             },
-            "scope": 188,
-            "src": "185:66:4",
+            "scope": 280,
+            "src": "185:66:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 189,
-        "src": "161:92:4"
+        "scope": 281,
+        "src": "161:92:6"
       }
     ],
-    "src": "136:118:4"
+    "src": "136:118:6"
   },
   "compiler": {
     "name": "solc",
@@ -312,7 +312,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.19",
-  "updatedAt": "2019-11-24T22:49:53.708Z",
+  "updatedAt": "2019-11-25T07:56:38.988Z",
   "devdoc": {
     "methods": {}
   },
